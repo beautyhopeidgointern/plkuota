@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <section class="hero">
+        <h1 id="game-title">Loading...</h1>
+        <p id="game-subtitle" class="hero-text">Sedang memuat produk...</p>
+      </section>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="section-head">
+        <h2>Daftar Paket</h2>
+        <p>Klik paket untuk lanjut ke form.</p>
+      </div>
+
+      <div id="price-list"></div>
+    </section>
+
+    <section class="card" id="order-section">
+      <div class="section-head">
+        <h2>Form Pesanan</h2>
+        <p>Isi nomor tujuan lalu kirim via WhatsApp.</p>
+      </div>
+
+      <form onsubmit="return false;">
+        <div id="dynamic-fields"></div>
+
+        <div class="form-group">
+          <label for="selected-product">Produk Dipilih</label>
+          <input type="text" id="selected-product" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="selected-price">Harga</label>
+          <input type="text" id="selected-price" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="product-description">Deskripsi</label>
+          <textarea id="product-description" rows="4" readonly></textarea>
+        </div>
+
+        <div class="button-row">
+          <a
+            href="#"
+            id="contact-btn"
+            class="contact-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Kirim via WhatsApp
+          </a>
+        </div>
+
+        <div class="form-group">
+          <label for="preview-order">Preview Pesanan</label>
+          <textarea id="preview-order" rows="8" readonly></textarea>
+        </div>
+
+        <div class="back-row">
+          <a href="./index.html" class="back-link" id="back-home-link">← Kembali ke daftar provider</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
