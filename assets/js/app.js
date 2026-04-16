@@ -13,9 +13,7 @@ function loadProviderData(providerKey) {
     window.PRICE_DATA = null;
 
     const oldScript = document.getElementById("dynamic-provider-data");
-    if (oldScript) {
-      oldScript.remove();
-    }
+    if (oldScript) oldScript.remove();
 
     const script = document.createElement("script");
     script.id = "dynamic-provider-data";
@@ -39,6 +37,7 @@ function loadProviderData(providerKey) {
 
 const titleEl = document.getElementById("game-title");
 const subtitleEl = document.getElementById("game-subtitle");
+const categoryTabsEl = document.getElementById("category-tabs");
 const listEl = document.getElementById("price-list");
 const fieldsEl = document.getElementById("dynamic-fields");
 const selectedProductEl = document.getElementById("selected-product");
@@ -50,6 +49,7 @@ const previewEl = document.getElementById("preview-order");
 const backHomeLink = document.getElementById("back-home-link");
 
 let providerData = null;
+let activeCategoryIndex = 0;
 
 function normalizeField(field) {
   if (typeof field === "string") {
@@ -162,3 +162,155 @@ function createPriceCard(item) {
   });
 
   card.appendChild(title);
+  card.appendChild(price);
+
+  return card;
+}
+
+function renderCategoryTabs() {
+  if (!categoryTabsEl || !providerData) return;
+
+  const categories = Array.isArray(providerData.categories) ? providerData.categories : [];
+  categoryTabsEl.innerHTML = "";
+
+  if (categories.length <= 1) {
+    categoryTabsEl.style.display = "none";
+    return;
+  }
+
+  categoryTabsEl.style.display = "flex";
+
+  categories.forEach((category, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `category-tab${index === activeCategoryIndex ? " active" : ""}`;
+    button.textContent = category.title || `Kategori ${index + 1}`;
+
+    button.addEventListener("click", () => {
+      activeCategoryIndex = index;
+      renderCategoryTabs();
+      renderPriceList();
+    });
+
+    categoryTabsEl.appendChild(button);
+  });
+}
+
+function renderPriceList() {
+  if (!listEl || !providerData) return;
+
+  listEl.innerHTML = "";
+
+  if (Array.isArray(providerData.categories) && providerData.categories.length) {
+    const currentCategory = providerData.categories[activeCategoryIndex] || providerData.categories[0];
+
+    const grid = document.createElement("div");
+    grid.className = "price-category-grid";
+
+    (currentCategory.items || []).forEach((item) => {
+      grid.appendChild(createPriceCard(item));
+    });
+
+    listEl.appendChild(grid);
+    return;
+  }
+
+  if (Array.isArray(providerData.items) && providerData.items.length) {
+    const grid = document.createElement("div");
+    grid.className = "price-category-grid";
+
+    providerData.items.forEach((item) => {
+      grid.appendChild(createPriceCard(item));
+    });
+
+    listEl.appendChild(grid);
+    return;
+  }
+
+  listEl.innerHTML = `<div class="empty-state">Belum ada daftar produk untuk provider ini.</div>`;
+}
+
+function buildOrderText() {
+  const inputs = fieldsEl ? fieldsEl.querySelectorAll("input, select") : [];
+  const lines = [];
+
+  lines.push(`Pesanan ${providerData.title}`);
+  lines.push("");
+
+  inputs.forEach((input) => {
+    lines.push(`${input.dataset.label}: ${input.value.trim() || "-"}`);
+  });
+
+  lines.push(`Produk: ${selectedProductEl?.value || "-"}`);
+  lines.push(`Harga: ${selectedPriceEl?.value || "-"}`);
+  lines.push(`Deskripsi: ${descriptionEl?.value || "-"}`);
+
+  return lines.join("\n");
+}
+
+function updateWhatsappLink() {
+  if (!providerData || !contactBtn) return;
+
+  const text = buildOrderText();
+
+  if (previewEl) {
+    previewEl.value = text;
+  }
+
+  const encoded = encodeURIComponent(text);
+  contactBtn.href = `https://wa.me/${providerData.contact}?text=${encoded}`;
+}
+
+if (backHomeLink) {
+  backHomeLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    document.body.classList.add("page-leaving");
+
+    setTimeout(() => {
+      window.location.href = backHomeLink.href;
+    }, 180);
+  });
+}
+
+async function initProductPage() {
+  const providerKey = getProviderKey();
+
+  try {
+    providerData = await loadProviderData(providerKey);
+    activeCategoryIndex = 0;
+
+    if (titleEl) titleEl.textContent = providerData.title;
+    if (subtitleEl) subtitleEl.textContent = providerData.subtitle;
+
+    renderFields();
+    renderCategoryTabs();
+    renderPriceList();
+
+    if (selectedProductEl) selectedProductEl.value = "";
+    if (selectedPriceEl) selectedPriceEl.value = "";
+    if (descriptionEl) descriptionEl.value = "";
+    if (previewEl) previewEl.value = "";
+
+    updateWhatsappLink();
+  } catch (error) {
+    if (titleEl) titleEl.textContent = "Provider tidak ditemukan";
+    if (subtitleEl) subtitleEl.textContent = "Data provider belum tersedia atau nama file salah.";
+
+    if (categoryTabsEl) categoryTabsEl.innerHTML = "";
+    if (listEl) {
+      listEl.innerHTML = `<div class="empty-state">Data provider ini belum ada.</div>`;
+    }
+
+    if (fieldsEl) fieldsEl.innerHTML = "";
+    if (selectedProductEl) selectedProductEl.value = "";
+    if (selectedPriceEl) selectedPriceEl.value = "";
+    if (descriptionEl) descriptionEl.value = "";
+    if (previewEl) previewEl.value = "";
+
+    if (contactBtn) {
+      contactBtn.removeAttribute("href");
+    }
+  }
+}
+
+initProductPage();
