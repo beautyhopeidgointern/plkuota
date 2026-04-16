@@ -9,7 +9,8 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <section class="hero">
+      <section class="hero hero-provider">
+        <a href="./index.html" class="hero-back-btn" id="back-home-link" aria-label="Kembali ke daftar provider">✕</a>
         <h1 id="game-title">Loading...</h1>
         <p id="game-subtitle" class="hero-text">Sedang memuat produk...</p>
       </section>
@@ -23,6 +24,7 @@
         <p>Klik paket untuk lanjut ke form.</p>
       </div>
 
+      <div id="category-tabs" class="category-tabs"></div>
       <div id="price-list"></div>
     </section>
 
@@ -65,10 +67,6 @@
         <div class="form-group">
           <label for="preview-order">Preview Pesanan</label>
           <textarea id="preview-order" rows="8" readonly></textarea>
-        </div>
-
-        <div class="back-row">
-          <a href="./index.html" class="back-link" id="back-home-link">← Kembali ke daftar provider</a>
         </div>
       </form>
     </section>
