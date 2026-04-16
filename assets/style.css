@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* BODY */
+/* TRANSISI */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -38,52 +38,55 @@ body.page-leaving {
 /* CONTAINER */
 .container {
   width: min(100% - 16px, 480px);
-  margin: 4px auto 0;
+  margin: 0 auto;
 }
 
 /* HEADER */
 .site-header {
-  padding: 4px 0 6px;
+  padding: 8px 0;
 }
 
-/* HERO */
 .hero {
   background: var(--bg-soft);
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 10px 12px;
-  line-height: 1.3; /* 🔥 BIAR TEXT RAPET */
+  padding: 12px;
+  position: relative;
 }
 
-/* BRAND */
-.brand-title {
-  margin: 0 0 2px;
+/* BACK BUTTON (KANAN ATAS) */
+.hero-provider {
+  position: relative;
+}
+
+.hero-back-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
-.tagline {
-  margin: 0 0 4px;
+/* TITLE */
+.hero h1 {
+  margin: 0 0 2px;
+  font-size: 14px;
+}
+
+.hero-text {
   font-size: 11px;
   color: var(--muted);
-}
-
-/* CONTACT */
-.contact-info p {
-  margin: 0 0 2px;
-  font-size: 11px;
-  font-weight: bold;
-}
-
-.contact-links {
   margin: 0;
-  font-size: 11px;
-}
-
-.contact-links a {
-  color: var(--text);
-  text-decoration: underline;
 }
 
 /* CARD */
@@ -92,7 +95,7 @@ body.page-leaving {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .section-head h2 {
@@ -101,16 +104,16 @@ body.page-leaving {
 }
 
 .section-head p {
-  margin: 4px 0 8px;
+  margin: 2px 0 8px;
   font-size: 11px;
   color: var(--muted);
 }
 
-/* GAME GRID */
+/* GRID GAME / PROVIDER */
 .game-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  gap: 10px;
 }
 
 .game-card {
@@ -119,14 +122,7 @@ body.page-leaving {
   border-radius: 14px;
   padding: 10px;
   cursor: pointer;
-
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  user-select: none;
-}
-
-.game-card:hover {
-  box-shadow: var(--shadow);
 }
 
 .game-card-top {
@@ -136,15 +132,11 @@ body.page-leaving {
 }
 
 .game-icon {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 10px;
-  background: var(--accent-soft);
-  border: 1px solid var(--line);
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid var(--line);
 }
 
 .game-icon img {
@@ -169,24 +161,36 @@ body.page-leaving {
   font-weight: bold;
 }
 
-/* PRICE CATEGORY */
-.price-category {
-  margin-bottom: 10px;
+/* TAB KATEGORI */
+.category-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  overflow-x: auto;
 }
 
-.price-category-title {
-  margin: 0 0 6px;
-  font-size: 12px;
-  font-weight: 700;
+.category-tab {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
+.category-tab.active {
+  background: var(--button);
+  color: #fff;
+}
+
+/* GRID PRODUK */
 .price-category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  gap: 8px;
 }
 
-/* PRICE ITEM */
 .price-item {
   background: var(--card-2);
   border: 1px solid var(--line);
@@ -206,7 +210,7 @@ body.page-leaving {
 }
 
 .price-item .price {
-  font-size: 9px;
+  font-size: 10px;
   color: var(--muted);
 }
 
@@ -216,7 +220,7 @@ body.page-leaving {
 }
 
 label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: bold;
 }
 
@@ -227,37 +231,8 @@ select {
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 8px;
-  font-size: 11px;
-  background: #ffffff;
-  color: var(--text);
-}
-
-textarea {
-  resize: vertical;
-}
-
-/* QUANTITY */
-.qty-control {
-  display: grid;
-  grid-template-columns: 36px 1fr 36px;
-  gap: 6px;
-  align-items: center;
-}
-
-.qty-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  border: none;
-  background: var(--button);
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-#quantity {
-  height: 36px;
-  text-align: center;
+  font-size: 12px;
+  background: #fff;
 }
 
 /* BUTTON */
@@ -269,25 +244,17 @@ textarea {
   display: block;
   width: 100%;
   background: var(--button);
-  color: var(--button-text);
-  padding: 10px;
+  color: #fff;
+  padding: 12px;
   border-radius: 12px;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
-  font-size: 12px;
-}
-
-/* BACK */
-.back-link {
-  font-size: 10px;
-  text-decoration: none;
-  color: var(--text);
 }
 
 /* EMPTY */
 .empty-state {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
 
