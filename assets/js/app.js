@@ -40,6 +40,7 @@ const subtitleEl = document.getElementById("game-subtitle");
 const categoryTabsEl = document.getElementById("category-tabs");
 const listEl = document.getElementById("price-list");
 const fieldsEl = document.getElementById("dynamic-fields");
+const providerCategoryEl = document.getElementById("provider-category");
 const selectedProductEl = document.getElementById("selected-product");
 const selectedPriceEl = document.getElementById("selected-price");
 const descriptionEl = document.getElementById("product-description");
@@ -123,6 +124,23 @@ function renderFields() {
   });
 }
 
+function getCurrentCategory() {
+  if (!providerData || !Array.isArray(providerData.categories) || !providerData.categories.length) {
+    return null;
+  }
+  return providerData.categories[activeCategoryIndex] || providerData.categories[0];
+}
+
+function updateProviderCategoryField() {
+  if (!providerCategoryEl || !providerData) return;
+
+  const currentCategory = getCurrentCategory();
+  const providerName = providerData.title || "-";
+  const categoryName = currentCategory?.title || "-";
+
+  providerCategoryEl.value = `${providerName} / ${categoryName}`;
+}
+
 function createPriceCard(item) {
   const card = document.createElement("div");
   card.className = "price-item";
@@ -137,6 +155,8 @@ function createPriceCard(item) {
   price.textContent = item.price;
 
   const selectItem = () => {
+    updateProviderCategoryField();
+
     if (selectedProductEl) selectedProductEl.value = item.name;
     if (selectedPriceEl) selectedPriceEl.value = item.price;
     if (descriptionEl) descriptionEl.value = item.description || "-";
@@ -190,6 +210,12 @@ function renderCategoryTabs() {
       activeCategoryIndex = index;
       renderCategoryTabs();
       renderPriceList();
+      updateProviderCategoryField();
+
+      if (selectedProductEl) selectedProductEl.value = "";
+      if (selectedPriceEl) selectedPriceEl.value = "";
+      if (descriptionEl) descriptionEl.value = "";
+      updateWhatsappLink();
     });
 
     categoryTabsEl.appendChild(button);
@@ -202,7 +228,7 @@ function renderPriceList() {
   listEl.innerHTML = "";
 
   if (Array.isArray(providerData.categories) && providerData.categories.length) {
-    const currentCategory = providerData.categories[activeCategoryIndex] || providerData.categories[0];
+    const currentCategory = getCurrentCategory();
 
     const grid = document.createElement("div");
     grid.className = "price-category-grid";
@@ -241,7 +267,8 @@ function buildOrderText() {
     lines.push(`${input.dataset.label}: ${input.value.trim() || "-"}`);
   });
 
-  lines.push(`Produk: ${selectedProductEl?.value || "-"}`);
+  lines.push(`Provider/Kategori: ${providerCategoryEl?.value || "-"}`);
+  lines.push(`Produk Dipilih: ${selectedProductEl?.value || "-"}`);
   lines.push(`Harga: ${selectedPriceEl?.value || "-"}`);
   lines.push(`Deskripsi: ${descriptionEl?.value || "-"}`);
 
@@ -250,6 +277,8 @@ function buildOrderText() {
 
 function updateWhatsappLink() {
   if (!providerData || !contactBtn) return;
+
+  updateProviderCategoryField();
 
   const text = buildOrderText();
 
@@ -285,6 +314,7 @@ async function initProductPage() {
     renderFields();
     renderCategoryTabs();
     renderPriceList();
+    updateProviderCategoryField();
 
     if (selectedProductEl) selectedProductEl.value = "";
     if (selectedPriceEl) selectedPriceEl.value = "";
@@ -302,6 +332,7 @@ async function initProductPage() {
     }
 
     if (fieldsEl) fieldsEl.innerHTML = "";
+    if (providerCategoryEl) providerCategoryEl.value = "";
     if (selectedProductEl) selectedProductEl.value = "";
     if (selectedPriceEl) selectedPriceEl.value = "";
     if (descriptionEl) descriptionEl.value = "";
