@@ -1,33 +1,35 @@
-function getGameKey() {
+function getProviderKey() {
   const params = new URLSearchParams(window.location.search);
-  return params.get("game") || "";
+  return params.get("provider") || "";
 }
 
-function loadGameData(gameKey) {
+function loadProviderData(providerKey) {
   return new Promise((resolve, reject) => {
-    if (!gameKey) {
-      reject(new Error("Game tidak ditemukan"));
+    if (!providerKey) {
+      reject(new Error("Provider tidak ditemukan"));
       return;
     }
 
     window.PRICE_DATA = null;
 
-    const oldScript = document.getElementById("dynamic-game-data");
+    const oldScript = document.getElementById("dynamic-provider-data");
     if (oldScript) oldScript.remove();
 
     const script = document.createElement("script");
-    script.id = "dynamic-game-data";
-    script.src = `./data/${encodeURIComponent(gameKey)}.js`;
+    script.id = "dynamic-provider-data";
+    script.src = `./data/${encodeURIComponent(providerKey)}.js`;
 
     script.onload = () => {
       if (window.PRICE_DATA && typeof window.PRICE_DATA === "object") {
         resolve(window.PRICE_DATA);
       } else {
-        reject(new Error("Data game kosong"));
+        reject(new Error("Data provider kosong"));
       }
     };
 
-    script.onerror = () => reject(new Error("File data game tidak ditemukan"));
+    script.onerror = () => {
+      reject(new Error("File data provider tidak ditemukan"));
+    };
 
     document.body.appendChild(script);
   });
@@ -35,53 +37,20 @@ function loadGameData(gameKey) {
 
 const titleEl = document.getElementById("game-title");
 const subtitleEl = document.getElementById("game-subtitle");
+const categoryTabsEl = document.getElementById("category-tabs");
 const listEl = document.getElementById("price-list");
 const fieldsEl = document.getElementById("dynamic-fields");
+const providerCategoryEl = document.getElementById("provider-category");
 const selectedProductEl = document.getElementById("selected-product");
 const selectedPriceEl = document.getElementById("selected-price");
-const totalPriceEl = document.getElementById("total-price");
-const quantityEl = document.getElementById("quantity");
-const qtyMinusBtn = document.getElementById("qty-minus");
-const qtyPlusBtn = document.getElementById("qty-plus");
+const descriptionEl = document.getElementById("product-description");
 const contactBtn = document.getElementById("contact-btn");
-const orderNowBtn = document.getElementById("order-now-btn");
-const orderModal = document.getElementById("order-modal");
-const modalClose = document.getElementById("modal-close");
-const copyBtn = document.getElementById("copy-order-btn");
 const orderSection = document.getElementById("order-section");
 const previewEl = document.getElementById("preview-order");
 const backHomeLink = document.getElementById("back-home-link");
-const backTop = document.getElementById("back-top");
 
-let gameData = null;
-
-function parseRupiah(value) {
-  if (!value) return 0;
-  return Number(String(value).replace(/[^\d]/g, "")) || 0;
-}
-
-function formatRupiah(value) {
-  return `Rp ${value.toLocaleString("id-ID")}`;
-}
-
-function getQuantity() {
-  const qty = Number(quantityEl?.value) || 1;
-  return qty < 1 ? 1 : qty;
-}
-
-function getSelectedPriceNumber() {
-  return parseRupiah(selectedPriceEl?.value);
-}
-
-function getTotalPriceNumber() {
-  return getSelectedPriceNumber() * getQuantity();
-}
-
-function updateTotalPrice() {
-  if (!totalPriceEl) return;
-  const total = getTotalPriceNumber();
-  totalPriceEl.value = total > 0 ? formatRupiah(total) : "-";
-}
+let providerData = null;
+let activeCategoryIndex = 0;
 
 function normalizeField(field) {
   if (typeof field === "string") {
@@ -116,7 +85,6 @@ function createField(field, index) {
     input = document.createElement("select");
     input.id = `field-${index}`;
     input.dataset.label = config.label;
-    input.required = true;
 
     const defaultOption = document.createElement("option");
     defaultOption.value = "";
@@ -136,18 +104,10 @@ function createField(field, index) {
     input.dataset.label = config.label;
     input.placeholder = config.placeholder;
     input.autocomplete = "off";
-    input.required = true;
   }
 
-  input.addEventListener("input", () => {
-    input.classList.remove("field-error");
-    updateWhatsappLink();
-  });
-
-  input.addEventListener("change", () => {
-    input.classList.remove("field-error");
-    updateWhatsappLink();
-  });
+  input.addEventListener("input", updateWhatsappLink);
+  input.addEventListener("change", updateWhatsappLink);
 
   wrapper.appendChild(label);
   wrapper.appendChild(input);
@@ -156,12 +116,29 @@ function createField(field, index) {
 }
 
 function renderFields() {
-  if (!fieldsEl || !gameData) return;
+  if (!fieldsEl || !providerData) return;
 
   fieldsEl.innerHTML = "";
-  (gameData.formFields || []).forEach((field, index) => {
+  (providerData.formFields || []).forEach((field, index) => {
     fieldsEl.appendChild(createField(field, index));
   });
+}
+
+function getCurrentCategory() {
+  if (!providerData || !Array.isArray(providerData.categories) || !providerData.categories.length) {
+    return null;
+  }
+  return providerData.categories[activeCategoryIndex] || providerData.categories[0];
+}
+
+function updateProviderCategoryField() {
+  if (!providerCategoryEl || !providerData) return;
+
+  const currentCategory = getCurrentCategory();
+  const providerName = providerData.title || "-";
+  const categoryName = currentCategory?.title || "-";
+
+  providerCategoryEl.value = `${providerName} / ${categoryName}`;
 }
 
 function createPriceCard(item) {
@@ -178,17 +155,17 @@ function createPriceCard(item) {
   price.textContent = item.price;
 
   const selectItem = () => {
+    updateProviderCategoryField();
+
     if (selectedProductEl) selectedProductEl.value = item.name;
     if (selectedPriceEl) selectedPriceEl.value = item.price;
-    if (quantityEl) quantityEl.value = 1;
+    if (descriptionEl) descriptionEl.value = item.description || "-";
 
     document.querySelectorAll(".price-item").forEach((el) => {
       el.classList.remove("selected");
     });
-
     card.classList.add("selected");
 
-    updateTotalPrice();
     updateWhatsappLink();
 
     if (orderSection) {
@@ -197,7 +174,6 @@ function createPriceCard(item) {
   };
 
   card.addEventListener("click", selectItem);
-
   card.addEventListener("keydown", (event) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
@@ -211,39 +187,53 @@ function createPriceCard(item) {
   return card;
 }
 
-function renderPriceList() {
-  if (!listEl || !gameData) return;
+function renderCategoryTabs() {
+  if (!categoryTabsEl || !providerData) return;
 
-  listEl.innerHTML = "";
+  const categories = Array.isArray(providerData.categories) ? providerData.categories : [];
+  categoryTabsEl.innerHTML = "";
 
-  if (Array.isArray(gameData.categories) && gameData.categories.length) {
-    gameData.categories.forEach((category) => {
-      const section = document.createElement("div");
-      section.className = "price-category";
-
-      const heading = document.createElement("h3");
-      heading.className = "price-category-title";
-      heading.textContent = category.title || "Kategori";
-
-      const grid = document.createElement("div");
-      grid.className = "price-category-grid";
-
-      (category.items || []).forEach((item) => {
-        grid.appendChild(createPriceCard(item));
-      });
-
-      section.appendChild(heading);
-      section.appendChild(grid);
-      listEl.appendChild(section);
-    });
+  if (categories.length <= 1) {
+    categoryTabsEl.style.display = "none";
     return;
   }
 
-  if (Array.isArray(gameData.items) && gameData.items.length) {
-    const grid = document.createElement("div");
-    grid.className = "price-grid";
+  categoryTabsEl.style.display = "flex";
 
-    gameData.items.forEach((item) => {
+  categories.forEach((category, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `category-tab${index === activeCategoryIndex ? " active" : ""}`;
+    button.textContent = category.title || `Kategori ${index + 1}`;
+
+    button.addEventListener("click", () => {
+      activeCategoryIndex = index;
+      renderCategoryTabs();
+      renderPriceList();
+      updateProviderCategoryField();
+
+      if (selectedProductEl) selectedProductEl.value = "";
+      if (selectedPriceEl) selectedPriceEl.value = "";
+      if (descriptionEl) descriptionEl.value = "";
+      updateWhatsappLink();
+    });
+
+    categoryTabsEl.appendChild(button);
+  });
+}
+
+function renderPriceList() {
+  if (!listEl || !providerData) return;
+
+  listEl.innerHTML = "";
+
+  if (Array.isArray(providerData.categories) && providerData.categories.length) {
+    const currentCategory = getCurrentCategory();
+
+    const grid = document.createElement("div");
+    grid.className = "price-category-grid";
+
+    (currentCategory.items || []).forEach((item) => {
       grid.appendChild(createPriceCard(item));
     });
 
@@ -251,64 +241,44 @@ function renderPriceList() {
     return;
   }
 
-  listEl.innerHTML = `<div class="empty-state">Belum ada daftar harga untuk game ini.</div>`;
+  if (Array.isArray(providerData.items) && providerData.items.length) {
+    const grid = document.createElement("div");
+    grid.className = "price-category-grid";
+
+    providerData.items.forEach((item) => {
+      grid.appendChild(createPriceCard(item));
+    });
+
+    listEl.appendChild(grid);
+    return;
+  }
+
+  listEl.innerHTML = `<div class="empty-state">Belum ada daftar produk untuk provider ini.</div>`;
 }
 
 function buildOrderText() {
   const inputs = fieldsEl ? fieldsEl.querySelectorAll("input, select") : [];
   const lines = [];
 
-  lines.push(`Pesanan ${gameData.title}`);
+  lines.push(`Pesanan ${providerData.title}`);
   lines.push("");
 
   inputs.forEach((input) => {
     lines.push(`${input.dataset.label}: ${input.value.trim() || "-"}`);
   });
 
-  lines.push(`Produk: ${selectedProductEl?.value || "-"}`);
-  lines.push(`Harga Satuan: ${selectedPriceEl?.value || "-"}`);
-  lines.push(`Kuantitas: ${getQuantity()}`);
-  lines.push(`Total Harga: ${totalPriceEl?.value || "-"}`);
+  lines.push(`Provider/Kategori: ${providerCategoryEl?.value || "-"}`);
+  lines.push(`Produk Dipilih: ${selectedProductEl?.value || "-"}`);
+  lines.push(`Harga: ${selectedPriceEl?.value || "-"}`);
+  lines.push(`Deskripsi: ${descriptionEl?.value || "-"}`);
 
   return lines.join("\n");
 }
 
-function validateOrderForm() {
-  const inputs = fieldsEl ? fieldsEl.querySelectorAll("input, select") : [];
-  let firstEmptyField = null;
-
-  inputs.forEach((input) => {
-    const value = String(input.value || "").trim();
-
-    if (!value) {
-      input.classList.add("field-error");
-
-      if (!firstEmptyField) {
-        firstEmptyField = input;
-      }
-    } else {
-      input.classList.remove("field-error");
-    }
-  });
-
-  if (!selectedProductEl?.value) {
-    alert("Pilih produk terlebih dahulu.");
-    return false;
-  }
-
-  if (firstEmptyField) {
-    alert("Kolom wajib diisi. Lengkapi semua data pesanan terlebih dahulu.");
-    firstEmptyField.focus();
-    return false;
-  }
-
-  return true;
-}
-
 function updateWhatsappLink() {
-  if (!gameData || !contactBtn) return;
+  if (!providerData || !contactBtn) return;
 
-  updateTotalPrice();
+  updateProviderCategoryField();
 
   const text = buildOrderText();
 
@@ -317,90 +287,7 @@ function updateWhatsappLink() {
   }
 
   const encoded = encodeURIComponent(text);
-  contactBtn.href = `https://wa.me/${gameData.contact}?text=${encoded}`;
-}
-
-function openOrderModal() {
-  updateWhatsappLink();
-
-  if (!validateOrderForm()) {
-    return;
-  }
-
-  if (orderModal) {
-    orderModal.classList.add("active");
-  }
-}
-
-function closeOrderModal() {
-  if (orderModal) {
-    orderModal.classList.remove("active");
-  }
-}
-
-if (orderNowBtn) {
-  orderNowBtn.addEventListener("click", openOrderModal);
-}
-
-if (modalClose) {
-  modalClose.addEventListener("click", closeOrderModal);
-}
-
-if (orderModal) {
-  orderModal.addEventListener("click", (event) => {
-    if (event.target === orderModal) {
-      closeOrderModal();
-    }
-  });
-}
-
-if (copyBtn) {
-  copyBtn.addEventListener("click", async () => {
-    const text = previewEl?.value || buildOrderText();
-
-    try {
-      await navigator.clipboard.writeText(text);
-      copyBtn.textContent = "Copied";
-      setTimeout(() => {
-        copyBtn.textContent = "Copy";
-      }, 1200);
-    } catch (error) {
-      if (previewEl) {
-        previewEl.select();
-        document.execCommand("copy");
-      }
-
-      copyBtn.textContent = "Copied";
-      setTimeout(() => {
-        copyBtn.textContent = "Copy";
-      }, 1200);
-    }
-  });
-}
-
-if (qtyMinusBtn) {
-  qtyMinusBtn.addEventListener("click", () => {
-    const current = getQuantity();
-    if (quantityEl) quantityEl.value = current > 1 ? current - 1 : 1;
-    updateWhatsappLink();
-  });
-}
-
-if (qtyPlusBtn) {
-  qtyPlusBtn.addEventListener("click", () => {
-    const current = getQuantity();
-    if (quantityEl) quantityEl.value = current + 1;
-    updateWhatsappLink();
-  });
-}
-
-if (quantityEl) {
-  quantityEl.addEventListener("input", () => {
-    if (Number(quantityEl.value) < 1 || !quantityEl.value) {
-      quantityEl.value = 1;
-    }
-    updateWhatsappLink();
-  });
+  contactBtn.href = `https://wa.me/${providerData.contact}?text=${encoded}`;
 }
 
 if (backHomeLink) {
@@ -414,48 +301,41 @@ if (backHomeLink) {
   });
 }
 
-if (backTop) {
-  backTop.addEventListener("click", (event) => {
-    event.preventDefault();
-    document.body.classList.add("page-leaving");
-
-    setTimeout(() => {
-      window.location.href = backTop.href;
-    }, 180);
-  });
-}
-
-async function initGamePage() {
-  const gameKey = getGameKey();
+async function initProductPage() {
+  const providerKey = getProviderKey();
 
   try {
-    gameData = await loadGameData(gameKey);
+    providerData = await loadProviderData(providerKey);
+    activeCategoryIndex = 0;
 
-    if (titleEl) titleEl.textContent = gameData.title;
-    if (subtitleEl) subtitleEl.textContent = gameData.subtitle;
+    if (titleEl) titleEl.textContent = providerData.title;
+    if (subtitleEl) subtitleEl.textContent = providerData.subtitle;
 
     renderFields();
+    renderCategoryTabs();
     renderPriceList();
+    updateProviderCategoryField();
 
     if (selectedProductEl) selectedProductEl.value = "";
     if (selectedPriceEl) selectedPriceEl.value = "";
-    if (quantityEl) quantityEl.value = 1;
-    if (totalPriceEl) totalPriceEl.value = "-";
+    if (descriptionEl) descriptionEl.value = "";
+    if (previewEl) previewEl.value = "";
 
     updateWhatsappLink();
   } catch (error) {
-    if (titleEl) titleEl.textContent = "Game tidak ditemukan";
-    if (subtitleEl) subtitleEl.textContent = "Data game belum tersedia atau nama file salah.";
+    if (titleEl) titleEl.textContent = "Provider tidak ditemukan";
+    if (subtitleEl) subtitleEl.textContent = "Data provider belum tersedia atau nama file salah.";
 
+    if (categoryTabsEl) categoryTabsEl.innerHTML = "";
     if (listEl) {
-      listEl.innerHTML = `<div class="empty-state">Data price list untuk game ini belum ada.</div>`;
+      listEl.innerHTML = `<div class="empty-state">Data provider ini belum ada.</div>`;
     }
 
     if (fieldsEl) fieldsEl.innerHTML = "";
+    if (providerCategoryEl) providerCategoryEl.value = "";
     if (selectedProductEl) selectedProductEl.value = "";
     if (selectedPriceEl) selectedPriceEl.value = "";
-    if (quantityEl) quantityEl.value = 1;
-    if (totalPriceEl) totalPriceEl.value = "";
+    if (descriptionEl) descriptionEl.value = "";
     if (previewEl) previewEl.value = "";
 
     if (contactBtn) {
@@ -464,4 +344,4 @@ async function initGamePage() {
   }
 }
 
-initGamePage();
+initProductPage();
