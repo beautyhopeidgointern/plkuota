@@ -264,3 +264,8 @@ select {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.field-error {
+  border-color: #e53935 !important;
+  background: #fff5f5 !important;
+}
