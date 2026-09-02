@@ -219,6 +219,77 @@ window.PRICE_DATA = {
         { name: "Data 10GB 7 Hari", price: "Rp 35.700", description: "Paket Data 10GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Data 12GB 7 Hari", price: "Rp 37.500", description: "Paket Data 12GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
+    },
+
+    /* ========================
+       KUOTA TSEL SUKABUMI BOGOR BANTEN
+    ======================== */
+    {
+      title: "Kuota Tsel Sukabumi Bogor Banten",
+      items: [
+        { name: "Tsel SBB 5 GB 30 Hari", price: "Rp 37.600", description: "Paket Tsel SBB 5 GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel SBB 9 GB 30 Hari", price: "Rp 48.800", description: "Paket Tsel SBB 9 GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel SBB 18 GB 30 Hari", price: "Rp 74.900", description: "Paket Tsel SBB 18 GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel SBB 28 GB 30 Hari", price: "Rp 94.300", description: "Paket Tsel SBB 28 GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel SBB 42 GB 30 Hari", price: "Rp 103.500", description: "Paket Tsel SBB 42 GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel SBB 60 GB 30 Hari", price: "Rp 132.400", description: "Paket Tsel SBB 60 GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel SBB 80 GB 30 Hari", price: "Rp 158.700", description: "Paket Tsel SBB 80 GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
+
+    /* ========================
+       TELKOMSEL MAXGAME DATA
+    ======================== */
+    {
+      title: "Telkomsel MaxGame Data",
+      items: [
+        { name: "1,5GB All + 10 GB GameMax Booster + 50 Diamond FF 30 Hari", price: "Rp 25.700", description: "Paket 1,5GB All + 10 GB GameMax Booster + 50 Diamond FF 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "1.5GB All + 10GB GameMax Booster + 28 DM Mobile Legend 30 Hari", price: "Rp 25.900", description: "Paket 1.5GB All + 10GB GameMax Booster + 28 DM Mobile Legend 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "3.5GB REG + 20GB GameMax Booster + 140 Diamond FF - 30 HARI", price: "Rp 50.600", description: "Paket 3.5GB REG + 20GB GameMax Booster + 140 Diamond FF - 30 HARI. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "3,5GB All + 20 GB GameMax Booster + 85 Diamond MLBB 30 Hari", price: "Rp 50.700", description: "Paket 3,5GB All + 20 GB GameMax Booster + 85 Diamond MLBB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "6GB All + 30GB GameMax Booster + 85 Diamond MLBB 30 Hari", price: "Rp 77.100", description: "Paket 6GB All + 30GB GameMax Booster + 85 Diamond MLBB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "6GB All + 30 GameMax Booster + 140 Diamond FF 30 Hari", price: "Rp 77.200", description: "Paket 6GB All + 30 GameMax Booster + 140 Diamond FF 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
+
+    /* ========================
+       TSEL OMG VAGANZA
+    ======================== */
+    {
+      title: "Tsel OMG Vaganza",
+      items: [
+        { name: "Data 0.8 - 2GB All (Sesuai Zona) 1 Hari", price: "Rp 12.100", description: "Paket Data 0.8 - 2GB All (Sesuai Zona) 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 6 - 8GB All (Sesuai Zona) 1 Hari", price: "Rp 22.400", description: "Paket Data 6 - 8GB All (Sesuai Zona) 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2 - 3.8GB All (Sesuai Zona) 3 Hari", price: "Rp 27.700", description: "Paket Data 2 - 3.8GB All (Sesuai Zona) 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 1.2 - 2.5GB All (Sesuai Zona) 7 Hari", price: "Rp 32.900", description: "Paket Data 1.2 - 2.5GB All (Sesuai Zona) 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 4 - 17GB All (Sesuai Zona) 3 Hari", price: "Rp 43.100", description: "Paket Data 4 - 17GB All (Sesuai Zona) 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3.3 - 7GB All (Sesuai Zona) + 1GB OMG 30 Hari", price: "Rp 44.300", description: "Paket Data 3.3 - 7GB All (Sesuai Zona) + 1GB OMG 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2.5 - 6GB All (Sesuai Zona) 7 Hari", price: "Rp 48.200", description: "Paket Data 2.5 - 6GB All (Sesuai Zona) 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 4 - 13GB All (Sesuai Zona) + 2GB OMG 30 Hari", price: "Rp 68.500", description: "Paket Data 4 - 13GB All (Sesuai Zona) + 2GB OMG 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7 - 23GB All (Sesuai Zona) + 2GB OMG 30 Hari", price: "Rp 96.900", description: "Paket Data 7 - 23GB All (Sesuai Zona) + 2GB OMG 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
+
+    /* ========================
+       TSEL DATA SOSMED
+    ======================== */
+    {
+      title: "Tsel Data Sosmed",
+      items: [
+        { name: "Kuota 2 GB DPI 7 Hari", price: "Rp 22.700", description: "Paket Kuota 2 GB DPI 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "2GB All + 1GB Sosmed 30 Hari", price: "Rp 27.400", description: "Paket 2GB All + 1GB Sosmed 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Kuota 5 GB DPI 7 Hari", price: "Rp 33.700", description: "Paket Kuota 5 GB DPI 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "5GB All + 2GB DPI 30 Hari", price: "Rp 38.000", description: "Paket 5GB All + 2GB DPI 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "3GB All + 2GB Sosmed 30 hari", price: "Rp 44.800", description: "Paket 3GB All + 2GB Sosmed 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "4GB All + 4GB DPI 30 Hari", price: "Rp 49.600", description: "Paket 4GB All + 4GB DPI 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "6GB All + 2GB DPI 30 Hari", price: "Rp 49.700", description: "Paket 6GB All + 2GB DPI 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "8GB All + 4GB Sosmed 30 hari", price: "Rp 60.800", description: "Paket 8GB All + 4GB Sosmed 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "8GB All + 7GB DPI 30 Hari", price: "Rp 61.700", description: "Paket 8GB All + 7GB DPI 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "17GB All + 15GB DPI 30 Hari", price: "Rp 79.700", description: "Paket 17GB All + 15GB DPI 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "25GB All + 2GB DPI 30 Hari", price: "Rp 94.000", description: "Paket 25GB All + 2GB DPI 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "14GB All + 2GB DPI 30 Hari", price: "Rp 99.000", description: "Paket 14GB All + 2GB DPI 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "21GB All + 9GB Sosmed + 300 Sms + 200 Menit Telp 30 Hari", price: "Rp 116.900", description: "Paket 21GB All + 9GB Sosmed + 300 Sms + 200 Menit Telp 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
     }
   ]
 };
