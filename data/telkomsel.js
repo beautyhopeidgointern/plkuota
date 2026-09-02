@@ -13,74 +13,211 @@ window.PRICE_DATA = {
 
   categories: [
     /* ========================
-       DATA BULANAN
+       TELKOMSEL FLASH NASIONAL
     ======================== */
     {
-      title: "Data Bulanan",
+      title: "Telkomsel Flash Nasional",
       items: [
-        { name: "Tsel Data 1GB", price: "Rp 12.700", description: "Kuota utama 1GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 3GB", price: "Rp 20.700", description: "Kuota utama 3GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 2GB", price: "Rp 21.200", description: "Kuota utama 2GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 4GB", price: "Rp 27.000", description: "Kuota utama 4GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 5GB", price: "Rp 32.800", description: "Kuota utama 5GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 6GB", price: "Rp 48.200", description: "Kuota utama 6GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 7GB", price: "Rp 48.200", description: "Kuota utama 7GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 8GB", price: "Rp 48.200", description: "Kuota utama 8GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 10GB", price: "Rp 53.400", description: "Kuota utama 10GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 9GB", price: "Rp 53.500", description: "Kuota utama 9GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 11GB", price: "Rp 58.900", description: "Kuota utama 11GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 15GB", price: "Rp 59.800", description: "Kuota utama 15GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 12GB", price: "Rp 65.200", description: "Kuota utama 12GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 18GB", price: "Rp 68.000", description: "Kuota utama 18GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 25GB", price: "Rp 85.700", description: "Kuota utama 25GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 16GB", price: "Rp 88.400", description: "Kuota utama 16GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 45GB", price: "Rp 149.300", description: "Kuota utama 45GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 50GB", price: "Rp 152.800", description: "Kuota utama 50GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 49GB", price: "Rp 153.200", description: "Kuota utama 49GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 75GB", price: "Rp 194.200", description: "Kuota utama 75GB, berlaku 28-30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "Data Flash 500MB 7 Hari", price: "Rp 6.700", description: "Paket Data Flash 500MB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 1 GB / 30 Hari", price: "Rp 15.100", description: "Paket Data Flash 1 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 2 GB / 30 Hari", price: "Rp 24.000", description: "Paket Data Flash 2 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 3GB 30 Hari", price: "Rp 29.400", description: "Paket Data Flash 3GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 5GB 30 Hari", price: "Rp 36.700", description: "Paket Data Flash 5GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 6 GB / 30 Hari", price: "Rp 39.800", description: "Paket Data Flash 6 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 7 GB / 30 Hari", price: "Rp 40.300", description: "Paket Data Flash 7 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 4GB 28hr Papua-Maluku", price: "Rp 41.600", description: "Paket Tsel Data 4GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "8GB All Jaringan 28 Hari", price: "Rp 44.600", description: "Paket 8GB All Jaringan 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "9GB All Jaringan 28 Hari", price: "Rp 49.300", description: "Paket 9GB All Jaringan 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 10 GB / 28 Hari", price: "Rp 51.700", description: "Paket Data Flash 10 GB / 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 11 GB / 30 Hari", price: "Rp 52.900", description: "Paket Data Flash 11 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 12 GB / 28 Hari", price: "Rp 53.200", description: "Paket Data Flash 12 GB / 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 15 GB / 30 Hari", price: "Rp 58.600", description: "Paket Data Flash 15 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 16 GB / 30 Hari", price: "Rp 62.200", description: "Paket Data Flash 16 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 14 GB / 30 Hari", price: "Rp 68.900", description: "Paket Data Flash 14 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 18 GB / 30 Hari", price: "Rp 75.300", description: "Paket Data Flash 18 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 20 GB / 30 Hari", price: "Rp 80.200", description: "Paket Data Flash 20 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 25 GB / 28 Hari", price: "Rp 83.100", description: "Paket Data Flash 25 GB / 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 17 GB / 30 Hari", price: "Rp 95.800", description: "Paket Data Flash 17 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 30 GB / 30 Hari", price: "Rp 96.400", description: "Paket Data Flash 30 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 50 GB / 30 Hari", price: "Rp 130.100", description: "Paket Data Flash 50 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 45 GB / 30 Hari", price: "Rp 132.000", description: "Paket Data Flash 45 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 49 GB / 28 Hari", price: "Rp 151.900", description: "Paket Data Flash 49 GB / 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 70 GB / 30 Hari", price: "Rp 170.500", description: "Paket Data Flash 70 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Flash 75 GB / 30 Hari", price: "Rp 191.200", description: "Paket Data Flash 75 GB / 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
 
     /* ========================
-       DATA HARIAN
+       TELKOMSEL FLASH PAMASUKA
     ======================== */
     {
-      title: "Data Harian",
+      title: "Telkomsel Flash PAMASUKA",
       items: [
-        { name: "Tsel Data 1GB (1 Hari)", price: "Rp 7.700", description: "Kuota utama 1GB, berlaku 1 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 3GB (1 Hari)", price: "Rp 14.200", description: "Kuota utama 3GB, berlaku 1 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 2GB (1 Hari)", price: "Rp 16.600", description: "Kuota utama 2GB, berlaku 1 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 1GB 30hr Papua-Maluku", price: "Rp 12.300", description: "Paket Tsel Data 1GB 30hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 2GB 28hr Papua-Maluku", price: "Rp 24.200", description: "Paket Tsel Data 2GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 3GB 28hr Papua-Maluku", price: "Rp 35.700", description: "Paket Tsel Data 3GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 5GB 28hr Papua-Maluku", price: "Rp 37.000", description: "Paket Tsel Data 5GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 4GB 28hr Papua-Maluku", price: "Rp 38.600", description: "Paket Tsel Data 4GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 6GB 28hr Papua-Maluku", price: "Rp 39.600", description: "Paket Tsel Data 6GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 7GB 28hr Papua-Maluku", price: "Rp 40.100", description: "Paket Tsel Data 7GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "8GB All Jaringan 28 Hari", price: "Rp 44.200", description: "Paket 8GB All Jaringan 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "9GB All Jaringan 28 Hari", price: "Rp 49.400", description: "Paket 9GB All Jaringan 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 10GB 28hr Papua-Maluku", price: "Rp 50.300", description: "Paket Tsel Data 10GB 28hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 15GB 30hr Papua-Maluku", price: "Rp 76.500", description: "Paket Tsel Data 15GB 30hr Papua-Maluku. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
 
-        { name: "Tsel Data 1GB (3 Hari)", price: "Rp 10.800", description: "Kuota utama 1GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 2GB (3 Hari)", price: "Rp 11.600", description: "Kuota utama 2GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 2GB (3 Hari) (Alt)", price: "Rp 12.000", description: "Kuota utama 2GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 3GB (3 Hari)", price: "Rp 13.900", description: "Kuota utama 3GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 5GB (3 Hari)", price: "Rp 32.300", description: "Kuota utama 5GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 7GB (3 Hari)", price: "Rp 43.200", description: "Kuota utama 7GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 15GB (3 Hari)", price: "Rp 62.000", description: "Kuota utama 15GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 20GB (3 Hari)", price: "Rp 71.700", description: "Kuota utama 20GB, berlaku 3 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+    /* ========================
+       TELKOMSEL EKSKLUSIF
+    ======================== */
+    {
+      title: "Telkomsel Eksklusif",
+      items: [
+        { name: "Data 1GB 30 Hari", price: "Rp 16.700", description: "Paket Data 1GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2GB 30 Hari", price: "Rp 27.600", description: "Paket Data 2GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3GB 30 Hari", price: "Rp 36.400", description: "Paket Data 3GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 4GB 30 Hari", price: "Rp 39.200", description: "Paket Data 4GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Eksklusif 5GB 30 Hari", price: "Rp 49.900", description: "Paket Data Eksklusif 5GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Eksklusif 10GB 30 Hari", price: "Rp 53.400", description: "Paket Data Eksklusif 10GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 6GB 30 Hari", price: "Rp 55.600", description: "Paket Data 6GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7GB 30 Hari", price: "Rp 55.800", description: "Paket Data 7GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 8GB 30 Hari", price: "Rp 58.300", description: "Paket Data 8GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 12GB 30 Hari", price: "Rp 79.000", description: "Paket Data 12GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Eksklusif 25GB 30 Hari", price: "Rp 123.700", description: "Paket Data Eksklusif 25GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data Eksklusif 40GB 30 Hari", price: "Rp 147.200", description: "Paket Data Eksklusif 40GB 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
 
-        { name: "Tsel Data 3GB (5 Hari)", price: "Rp 13.300", description: "Kuota utama 3GB, berlaku 5 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+    /* ========================
+       TSEL DATA HARIAN (1 - 5 HARI)
+    ======================== */
+    {
+      title: "Tsel Data Harian (1 - 5 Hari)",
+      items: [
+        { name: "Mini Data 500MB All 1 Hari", price: "Rp 6.800", description: "Paket Mini Data 500MB All 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 1GB All 1 Hari", price: "Rp 9.300", description: "Paket Mini Data 1GB All 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 2GB All 1 Hari", price: "Rp 10.200", description: "Paket Mini Data 2GB All 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 3GB All 1 Hari", price: "Rp 10.700", description: "Paket Mini Data 3GB All 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 7GB 1 Hari", price: "Rp 12.100", description: "Paket Tsel Data 7GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 5GB 1 Hari", price: "Rp 12.200", description: "Paket Tsel Data 5GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 4GB All 1 Hari", price: "Rp 12.700", description: "Paket Mini Data 4GB All 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 6GB All 1 Hari", price: "Rp 12.700", description: "Paket Mini Data 6GB All 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 5GB All 2 Hari", price: "Rp 21.500", description: "Paket Mini Data 5GB All 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 8GB All 2 Hari", price: "Rp 29.200", description: "Paket Mini Data 8GB All 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 500MB All 3 Hari", price: "Rp 6.700", description: "Paket Tsel Data Mini 500MB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 1GB All 3 Hari", price: "Rp 10.300", description: "Paket Tsel Data Mini 1GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 2GB All 3 Hari", price: "Rp 12.700", description: "Paket Tsel Data Mini 2GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 1,5GB All 3 Hari", price: "Rp 12.900", description: "Paket Tsel Data Mini 1,5GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 3GB All 3 Hari", price: "Rp 13.900", description: "Paket Tsel Data Mini 3GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 5GB All 3 Hari", price: "Rp 22.200", description: "Paket Tsel Data Mini 5GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 7GB All 3 Hari", price: "Rp 27.500", description: "Paket Tsel Data Mini 7GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 10GB All 3 Hari", price: "Rp 37.300", description: "Paket Tsel Data Mini 10GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 8GB All 3 Hari", price: "Rp 37.500", description: "Paket Tsel Data Mini 8GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 17GB All 3 Hari", price: "Rp 44.400", description: "Paket Tsel Data Mini 17GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 15GB All 3 Hari", price: "Rp 60.700", description: "Paket Tsel Data Mini 15GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 20GB All 3 Hari", price: "Rp 71.500", description: "Paket Tsel Data Mini 20GB All 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 2GB (5 Hari)", price: "Rp 13.200", description: "Paket Tsel Data Mini 2GB (5 Hari). Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 2,5GB (5 Hari)", price: "Rp 13.600", description: "Paket Tsel Data Mini 2,5GB (5 Hari). Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 3GB (5 Hari)", price: "Rp 15.000", description: "Paket Tsel Data Mini 3GB (5 Hari). Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 7GB (5 Hari)", price: "Rp 27.800", description: "Paket Tsel Data Mini 7GB (5 Hari). Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 5GB (5 Hari)", price: "Rp 28.100", description: "Paket Tsel Data Mini 5GB (5 Hari). Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 10GB (5 Hari)", price: "Rp 42.600", description: "Paket Tsel Data Mini 10GB (5 Hari). Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
 
-        { name: "Tsel Mini Data 250MB 7 Hari", price: "Rp 5.400", description: "Kuota utama 250MB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Mini Data 500MB 7 Hari", price: "Rp 6.700", description: "Kuota utama 500MB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 1GB All 7 Hari", price: "Rp 11.400", description: "Kuota utama 1GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Mini Data 750MB 7 Hari", price: "Rp 15.700", description: "Kuota utama 750MB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 1.5GB All 7 Hari", price: "Rp 16.000", description: "Kuota utama 1.5GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 500MB All 7 Hari", price: "Rp 16.300", description: "Kuota utama 500MB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 3GB All 7 Hari", price: "Rp 16.900", description: "Kuota utama 3GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 2GB All 7 Hari", price: "Rp 18.900", description: "Kuota utama 2GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 7GB All 7 Hari", price: "Rp 26.300", description: "Kuota utama 7GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 5GB All 7 Hari", price: "Rp 27.200", description: "Kuota utama 5GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 10GB All 7 Hari", price: "Rp 59.700", description: "Kuota utama 10GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 17GB All 7 Hari", price: "Rp 76.000", description: "Kuota utama 17GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 15GB All 7 Hari", price: "Rp 82.300", description: "Kuota utama 15GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 30GB All 7 Hari", price: "Rp 82.300", description: "Kuota utama 30GB, berlaku 7 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+    /* ========================
+       TSEL DATA MINGGUAN
+    ======================== */
+    {
+      title: "Tsel Data Mingguan",
+      items: [
+        { name: "Mini Data 1.5GB All 7 Hari", price: "Rp 16.800", description: "Paket Mini Data 1.5GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 2GB All 7 Hari", price: "Rp 16.800", description: "Paket Mini Data 2GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 1GB All 7 Hari", price: "Rp 18.700", description: "Paket Mini Data 1GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 3GB All 7 Hari", price: "Rp 19.000", description: "Paket Mini Data 3GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 5GB All 7 Hari", price: "Rp 27.200", description: "Paket Mini Data 5GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 7GB All 7 Hari", price: "Rp 27.800", description: "Paket Mini Data 7GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 10GB All 7 Hari", price: "Rp 36.700", description: "Paket Mini Data 10GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 15GB All 7 Hari", price: "Rp 38.300", description: "Paket Mini Data 15GB All 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 1,5GB 14 Hari", price: "Rp 21.900", description: "Paket Mini Data 1,5GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 2GB 14 Hari", price: "Rp 22.000", description: "Paket Mini Data 2GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 5GB 14 Hari", price: "Rp 34.200", description: "Paket Mini Data 5GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
 
-        { name: "Mini Data 1.5GB All 14 Hari", price: "Rp 21.400", description: "Kuota utama 1.5GB, berlaku 14 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 2GB All 14 Hari", price: "Rp 21.700", description: "Kuota utama 2GB, berlaku 14 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 3GB All 14 Hari", price: "Rp 60.600", description: "Kuota utama 3GB, berlaku 14 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 5GB All 14 Hari", price: "Rp 67.200", description: "Kuota utama 5GB, berlaku 14 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+    /* ========================
+       KUOTA TSEL JABAR - JABO
+    ======================== */
+    {
+      title: "Kuota Tsel Jabar - Jabo",
+      items: [
+        { name: "Data 4GB 1 Hari", price: "Rp 9.700", description: "Paket Data 4GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5 GB 1 Hari", price: "Rp 9.800", description: "Paket Data 5 GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 1.5 GB 1 Hari", price: "Rp 10.900", description: "Paket Data 1.5 GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 1,5GB 3 Hari", price: "Rp 11.000", description: "Paket Data 1,5GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2GB 3 Hari", price: "Rp 12.200", description: "Paket Data 2GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5GB 2 Hari", price: "Rp 12.700", description: "Paket Data 5GB 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 6GB 2 Hari", price: "Rp 13.200", description: "Paket Data 6GB 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3GB 3 Hari", price: "Rp 14.600", description: "Paket Data 3GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7GB 2 Hari", price: "Rp 15.000", description: "Paket Data 7GB 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3GB 5 Hari", price: "Rp 15.000", description: "Paket Data 3GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7GB 3 Hari", price: "Rp 15.300", description: "Paket Data 7GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5GB 3 Hari", price: "Rp 15.500", description: "Paket Data 5GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 4GB 5 Hari", price: "Rp 15.700", description: "Paket Data 4GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 6GB 5 Hari", price: "Rp 17.600", description: "Paket Data 6GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 1GB + 3GB Lokal 5 Hari", price: "Rp 17.900", description: "Paket Data 1GB + 3GB Lokal 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7GB 5 Hari", price: "Rp 20.200", description: "Paket Data 7GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 9GB 3 Hari", price: "Rp 20.700", description: "Paket Data 9GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3,5GB 7 Hari", price: "Rp 21.500", description: "Paket Data 3,5GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5GB 7 Hari", price: "Rp 22.400", description: "Paket Data 5GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5GB 7 Hari (Alt)", price: "Rp 22.700", description: "Paket Data 5GB 7 Hari (Alt). Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7GB 7 Hari", price: "Rp 24.700", description: "Paket Data 7GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5,5GB 5 Hari", price: "Rp 24.900", description: "Paket Data 5,5GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 9GB 5 Hari", price: "Rp 25.600", description: "Paket Data 9GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 9GB 7 Hari", price: "Rp 30.900", description: "Paket Data 9GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 10GB 7 Hari", price: "Rp 35.600", description: "Paket Data 10GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7GB 28 Hari", price: "Rp 36.200", description: "Paket Data 7GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 0,5GB All + 1,5GB Lokal + 2GB OMG 28 Hari", price: "Rp 36.400", description: "Paket Data 0,5GB All + 1,5GB Lokal + 2GB OMG 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 1,25GB All + 3,75GB Lokal + 2GB OMG 28 Hari", price: "Rp 36.600", description: "Paket Data 1,25GB All + 3,75GB Lokal + 2GB OMG 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 12GB 7 Hari", price: "Rp 40.100", description: "Paket Data 12GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 10GB 28 Hari", price: "Rp 45.000", description: "Paket Data 10GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 18GB 28 Hari", price: "Rp 54.900", description: "Paket Data 18GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2GB All + 6GB Lokal + 2GB OMG 28 Hari", price: "Rp 55.100", description: "Paket Data 2GB All + 6GB Lokal + 2GB OMG 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3GB All + 9GB Lokal + 2GB OMG 28 Hari", price: "Rp 63.700", description: "Paket Data 3GB All + 9GB Lokal + 2GB OMG 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 25GB 28 Hari", price: "Rp 67.900", description: "Paket Data 25GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 8GB + 17GB Lokal 28 Hari", price: "Rp 70.700", description: "Paket Data 8GB + 17GB Lokal 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 42GB 28 Hari", price: "Rp 94.300", description: "Paket Data 42GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5GB + 37GB Lokal Jabo - Jabar 28 Hari", price: "Rp 138.400", description: "Paket Data 5GB + 37GB Lokal Jabo - Jabar 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 6GB + 54GB Lokal Jabo - Jabar 28 Hari", price: "Rp 153.800", description: "Paket Data 6GB + 54GB Lokal Jabo - Jabar 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 9GB + 71GB Lokal Jabo - Jabar 28 Hari", price: "Rp 179.100", description: "Paket Data 9GB + 71GB Lokal Jabo - Jabar 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
+
+    /* ========================
+       KUOTA TSEL JATENG - JOGJA
+    ======================== */
+    {
+      title: "Kuota Tsel Jateng - Jogja",
+      items: [
+        { name: "TSEL DATA 1GB+2GB LOKAL 1HR", price: "Rp 10.100", description: "Paket TSEL DATA 1GB+2GB LOKAL 1HR. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5GB 1 Hari", price: "Rp 10.700", description: "Paket Data 5GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 1.5GB 3 Hari", price: "Rp 11.300", description: "Paket Data 1.5GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2GB 3 Hari", price: "Rp 12.800", description: "Paket Data 2GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5GB 2 Hari", price: "Rp 13.100", description: "Paket Data 5GB 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3GB 3 Hari", price: "Rp 13.800", description: "Paket Data 3GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2,5GB All 5 Hari", price: "Rp 14.600", description: "Paket Data 2,5GB All 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3GB 5 Hari", price: "Rp 15.300", description: "Paket Data 3GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "TSEL DATA 1GB+3GB LOKAL 5HR", price: "Rp 17.400", description: "Paket TSEL DATA 1GB+3GB LOKAL 5HR. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 2GB + 4GB Lokal 5 Hari", price: "Rp 18.400", description: "Paket Data 2GB + 4GB Lokal 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "TSEL DATA 2GB+4GB LOKAL 5HR", price: "Rp 20.800", description: "Paket TSEL DATA 2GB+4GB LOKAL 5HR. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 5,5GB 5 Hari", price: "Rp 20.900", description: "Paket Data 5,5GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 3.5GB 7 Hari", price: "Rp 21.100", description: "Paket Data 3.5GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "TSEL DATA 2GB+3GB LOKAL 7HR", price: "Rp 22.600", description: "Paket TSEL DATA 2GB+3GB LOKAL 7HR. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "TSEL DATA 3GB+4GB LOKAL 5HR", price: "Rp 25.400", description: "Paket TSEL DATA 3GB+4GB LOKAL 5HR. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "TSEL DATA 3GB+4GB LOKAL 7HR", price: "Rp 26.000", description: "Paket TSEL DATA 3GB+4GB LOKAL 7HR. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 7GB 7 Hari", price: "Rp 27.800", description: "Paket Data 7GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 10GB 7 Hari", price: "Rp 35.700", description: "Paket Data 10GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Data 12GB 7 Hari", price: "Rp 37.500", description: "Paket Data 12GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     }
   ]
