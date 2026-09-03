@@ -345,3 +345,37 @@ async function initProductPage() {
 }
 
 initProductPage();
+
+// === FUNGSI BARU UNTUK TOMBOL SALIN FORM ===
+function salinPreview() {
+  const elemenPreview = document.getElementById("preview-order");
+  const teksYangDisalin = elemenPreview.value; 
+
+  if (!teksYangDisalin || teksYangDisalin.trim() === "") {
+    alert("Form pesanan masih kosong! Silakan pilih produk terlebih dahulu.");
+    return;
+  }
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(teksYangDisalin)
+      .then(() => {
+        const btnCopy = document.getElementById("copy-btn");
+        const teksAsli = btnCopy.innerText;
+        
+        // Ubah teks tombol jadi "Tersalin!" sementara
+        btnCopy.innerText = "Tersalin!";
+        setTimeout(() => {
+          btnCopy.innerText = teksAsli;
+        }, 2000);
+      })
+      .catch(err => {
+        console.error('Gagal menyalin teks: ', err);
+        alert("Gagal menyalin form. Silakan salin manual.");
+      });
+  } else {
+    // Fallback kalau browser lawas
+    elemenPreview.select();
+    document.execCommand("copy");
+    alert("Pesan berhasil disalin!");
+  }
+}
