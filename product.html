@@ -57,19 +57,31 @@
           <textarea id="product-description" rows="4" readonly></textarea>
         </div>
 
-        <div class="button-row">
+        <!-- Bagian Tombol WA dan Salin Form (Sudah disesuaikan) -->
+        <div class="button-row" style="display: flex; gap: 10px;">
           <a
             href="#"
             id="contact-btn"
             class="contact-btn"
             target="_blank"
             rel="noopener noreferrer"
+            style="flex: 1; text-align: center; display: inline-block; box-sizing: border-box;"
           >
             Kirim via WhatsApp
           </a>
+          
+          <button 
+            type="button" 
+            id="copy-btn" 
+            class="contact-btn" 
+            onclick="salinPreview()"
+            style="flex: 1; background-color: #f1f5f9; color: #0f172a; border: 1px solid #cbd5e1; cursor: pointer; display: inline-block; box-sizing: border-box; font-weight: bold;"
+          >
+            Salin Form
+          </button>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="margin-top: 15px;">
           <label for="preview-order">Preview Pesanan</label>
           <textarea id="preview-order" rows="8" readonly></textarea>
         </div>
