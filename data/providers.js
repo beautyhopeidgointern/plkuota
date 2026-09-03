@@ -28,5 +28,17 @@ window.PROVIDER_LIST = [
     name: "XL",
     desc: "Kuota internet dan paket data XL",
     image: "https://faqs.uwu.ai/assets/images/gallery03/31b813d1_original.jpg?v=67d70808"
+  },
+  {
+    key: "smartfren",
+    name: "Smartfren",
+    desc: "Kuota internet dan paket data Smartfren",
+    image: "https://faqs.uwu.ai/assets/images/gallery03/00bd6541_original.jpg?v=d1ddde8e"
+  },
+  {
+    key: "byu",
+    name: "By.U",
+    desc: "Kuota internet dan paket data By.U",
+    image: "https://faqs.uwu.ai/assets/images/gallery03/1ab58438_original.jpg?v=d1ddde8e"
   }
 ];
