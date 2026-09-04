@@ -346,36 +346,78 @@ async function initProductPage() {
 
 initProductPage();
 
-// === FUNGSI BARU UNTUK TOMBOL SALIN FORM ===
+// === FUNGSI BARU UNTUK TOMBOL SALIN FORM (VERSI KUAT UNTUK MOBILE/IFRAME) ===
+
 function salinPreview() {
   const elemenPreview = document.getElementById("preview-order");
-  const teksYangDisalin = elemenPreview.value; 
+  const teksYangDisalin = elemenPreview.value;
 
   if (!teksYangDisalin || teksYangDisalin.trim() === "") {
     alert("Form pesanan masih kosong! Silakan pilih produk terlebih dahulu.");
     return;
   }
 
-  if (navigator.clipboard) {
+  // Coba gunakan Clipboard API versi modern jika diizinkan (Solusi 2)
+  if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(teksYangDisalin)
-      .then(() => {
-        const btnCopy = document.getElementById("copy-btn");
-        const teksAsli = btnCopy.innerText;
-        
-        // Ubah teks tombol jadi "Tersalin!" sementara
-        btnCopy.innerText = "Tersalin!";
-        setTimeout(() => {
-          btnCopy.innerText = teksAsli;
-        }, 2000);
-      })
+      .then(() => efekBerhasilSalin())
       .catch(err => {
-        console.error('Gagal menyalin teks: ', err);
-        alert("Gagal menyalin form. Silakan salin manual.");
+        console.warn("Clipboard API diblokir Iframe, mencoba fallback...", err);
+        jalankanFallbackCopy(elemenPreview); // Jika gagal, lari ke fallback
       });
   } else {
-    // Fallback kalau browser lawas
-    elemenPreview.select();
-    document.execCommand("copy");
-    alert("Pesan berhasil disalin!");
+    // Jika dari awal browser tidak dukung, langsung fallback (Solusi 1)
+    jalankanFallbackCopy(elemenPreview);
   }
+}
+
+// Fungsi cadangan paksa salin untuk Iframe / iOS / Android WebView
+function jalankanFallbackCopy(textarea) {
+  // Simpan status awal
+  const isReadOnly = textarea.readOnly;
+  
+  // Trik untuk iOS: Hapus readonly sementara agar teks bisa di-select sepenuhnya
+  textarea.readOnly = false;
+  
+  // Select teks
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // Khusus untuk mobile/iOS
+
+  try {
+    // Eksekusi perintah salin bawaan jadul
+    const berhasil = document.execCommand('copy');
+    
+    if (berhasil) {
+      efekBerhasilSalin();
+    } else {
+      alert("Gagal menyalin secara otomatis. Sistem menolak. Silakan blok teks dan salin manual.");
+    }
+  } catch (err) {
+    console.error("Fallback gagal:", err);
+    alert("HP kamu memblokir fitur salin dari aplikasi ini. Silakan salin manual.");
+  }
+
+  // Kembalikan status readonly agar tidak bisa diedit user
+  textarea.readOnly = isReadOnly;
+  
+  // Hilangkan blok biru/seleksi teks biar tampilan rapi lagi
+  if (window.getSelection) {
+    window.getSelection().removeAllRanges();
+  }
+}
+
+// Fungsi untuk animasi tombol berubah jadi "Tersalin!"
+function efekBerhasilSalin() {
+  const btnCopy = document.getElementById("copy-btn");
+  const teksAsli = btnCopy.innerText;
+  
+  btnCopy.innerText = "✓ Tersalin!";
+  btnCopy.style.backgroundColor = "#dcfce3"; // Beri warna hijau sedikit
+  btnCopy.style.color = "#166534";
+  
+  setTimeout(() => {
+    btnCopy.innerText = teksAsli;
+    btnCopy.style.backgroundColor = "#f1f5f9"; // Kembalikan warna awal
+    btnCopy.style.color = "#0f172a";
+  }, 2000);
 }
