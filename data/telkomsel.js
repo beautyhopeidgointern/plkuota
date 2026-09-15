@@ -123,6 +123,21 @@ window.PRICE_DATA = {
         { name: "Tsel Data Mini 3GB 14 Hari", price: "Rp 22.900", description: "Kuota utama 3GB, berlaku untuk 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 5GB 14 Hari", price: "Rp 33.700", description: "Kuota utama 5GB, berlaku untuk 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
+    },
+
+        /* ========================
+       TELKOMSEL GAMESMAX 🟢
+    ======================== */
+    {
+      title: "Telkomsel GamesMAX 🟢",
+      items: [
+        { name: "1.5GB Reguler + 10GB Game + 50 Diamonds Free Fire", price: "Rp 25.400", description: "Kuota utama 1.5GB reguler + 10GB kuota untuk akses game Mobile Legends, Free Fire, Arena of Valor, ShellFire, dan Ragnarok X: Next Generation + Bonus 50 Diamonds Free Fire, masa aktif 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "1.5GB Reguler + 10GB Game + 28 Diamonds Mobile Legends", price: "Rp 25.400", description: "Kuota utama 1.5GB reguler + 10GB kuota untuk akses game Mobile Legends, Free Fire, Arena of Valor, ShellFire, dan Ragnarok X: Next Generation + Bonus 28 Diamonds Mobile Legends, masa aktif 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "3.5GB Reguler + 20GB Game + 140 Diamonds Free Fire", price: "Rp 50.800", description: "Kuota utama 3.5GB reguler + 20GB kuota untuk akses game Mobile Legends, Free Fire, Arena of Valor, ShellFire, dan Ragnarok X: Next Generation + Bonus 140 Diamonds Free Fire, masa aktif 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "3.5GB Reguler + 20GB Game + 85 Diamonds Mobile Legends", price: "Rp 50.800", description: "Kuota utama 3.5GB reguler + 20GB kuota untuk akses game Mobile Legends, Free Fire, Arena of Valor, ShellFire, dan Ragnarok X: Next Generation + Bonus 85 Diamonds Mobile Legends, masa aktif 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "6GB Reguler + 30GB Game + 140 Diamonds Free Fire", price: "Rp 77.500", description: "Kuota utama 6GB reguler + 30GB kuota untuk akses game Mobile Legends, Free Fire, Arena of Valor, ShellFire, dan Ragnarok X: Next Generation + Bonus 140 Diamonds Free Fire, masa aktif 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "6GB Reguler + 30GB Game + 85 Diamonds Mobile Legends", price: "Rp 77.700", description: "Kuota utama 6GB reguler + 30GB kuota untuk akses game Mobile Legends, Free Fire, Arena of Valor, ShellFire, dan Ragnarok X: Next Generation + Bonus 85 Diamonds Mobile Legends, masa aktif 30 hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
     }
   ]
 };
