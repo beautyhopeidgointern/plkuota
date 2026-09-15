@@ -78,6 +78,51 @@ window.PRICE_DATA = {
         { name: "Tsel Data Mini 15GB 3 Hari", price: "Rp 60.300", description: "Kuota utama 15GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 20GB 3 Hari", price: "Rp 71.100", description: "Kuota utama 20GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
+    },
+
+        /* ========================
+       TELKOMSEL MINI 5 HARI 🔵
+    ======================== */
+    {
+      title: "Telkomsel Mini 5 Hari 🔵",
+      items: [
+        { name: "Tsel Data Mini 2GB 5 Hari", price: "Rp 13.000", description: "Kuota utama 2GB, berlaku untuk 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 2,5GB 5 Hari", price: "Rp 13.600", description: "Kuota utama 2,5GB, berlaku untuk 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 3GB 5 Hari", price: "Rp 14.900", description: "Kuota utama 3GB, berlaku untuk 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 5GB 5 Hari", price: "Rp 26.600", description: "Kuota utama 5GB, berlaku untuk 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 7GB 5 Hari", price: "Rp 27.200", description: "Kuota utama 7GB, berlaku untuk 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 10GB 5 Hari", price: "Rp 43.000", description: "Kuota utama 10GB, berlaku untuk 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
+
+    /* ========================
+       TELKOMSEL MINI 7 HARI 🔵
+    ======================== */
+    {
+      title: "Telkomsel Mini 7 Hari 🔵",
+      items: [
+        { name: "Tsel Data Mini 2GB 7 Hari", price: "Rp 15.900", description: "Kuota utama 2GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 1.5GB 7 Hari", price: "Rp 16.200", description: "Kuota utama 1.5GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 1GB 7 Hari", price: "Rp 18.100", description: "Kuota utama 1GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 3GB 7 Hari", price: "Rp 18.400", description: "Kuota utama 3GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 7GB 7 Hari", price: "Rp 26.400", description: "Kuota utama 7GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 5GB 7 Hari", price: "Rp 26.500", description: "Kuota utama 5GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 10GB 7 Hari", price: "Rp 36.300", description: "Kuota utama 10GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 15GB 7 Hari", price: "Rp 52.800", description: "Kuota utama 15GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
+    },
+
+    /* ========================
+       TELKOMSEL MINI 14 HARI 🔵
+    ======================== */
+    {
+      title: "Telkomsel Mini 14 Hari 🔵",
+      items: [
+        { name: "Tsel Data Mini 1,5GB 14 Hari", price: "Rp 21.600", description: "Kuota utama 1,5GB, berlaku untuk 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 2GB 14 Hari", price: "Rp 22.000", description: "Kuota utama 2GB, berlaku untuk 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 3GB 14 Hari", price: "Rp 22.900", description: "Kuota utama 3GB, berlaku untuk 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 5GB 14 Hari", price: "Rp 33.700", description: "Kuota utama 5GB, berlaku untuk 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
     }
   ]
 };
