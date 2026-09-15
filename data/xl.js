@@ -78,6 +78,25 @@ window.PRICE_DATA = {
         { name: "XL Flex Max 100GB 28 Hari", price: "Rp 120.300", description: "Kuota utama 100GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "XL Flex Max 150GB 28 Hari", price: "Rp 145.500", description: "Kuota utama 150GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
+    },
+
+        /* ========================
+       XL DATA PURE 🔵
+    ======================== */
+    {
+      title: "XL Data Pure 🔵",
+      items: [
+        { name: "500 MB 30 Hari", price: "Rp 5.000", description: "Kuota utama 500MB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "800MB 30 Hari All Jaringan", price: "Rp 7.000", description: "Kuota utama 800MB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "1GB 30 Hari All Jaringan", price: "Rp 8.500", description: "Kuota utama 1GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "2GB 30 Hari All Jaringan", price: "Rp 15.400", description: "Kuota utama 2GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "3GB 30 Hari All Jaringan", price: "Rp 22.700", description: "Kuota utama 3GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "4GB 30 Hari All Jaringan", price: "Rp 29.800", description: "Kuota utama 4GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "5GB 30 Hari All Jaringan", price: "Rp 37.200", description: "Kuota utama 5GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "6GB 30 Hari All Jaringan", price: "Rp 48.000", description: "Kuota utama 6GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "8GB 30 Hari All Jaringan", price: "Rp 63.300", description: "Kuota utama 8GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "10GB 30 Hari All Jaringan", price: "Rp 78.500", description: "Kuota utama 10GB, berlaku 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
     }
   ]
 }
