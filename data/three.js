@@ -12,142 +12,145 @@ window.PRICE_DATA = {
   ],
 
   categories: [
-    /* ========================
-       THREE DATA HAPPY HARIAN (1 - 5 HARI)
+      /* ========================
+       TRI HAPPY (1-5 HARI) 🔵
     ======================== */
     {
-      title: "Three Data Happy Harian (1 - 5 Hari)",
+      title: "Tri Happy (1-5 Hari) 🔵",
       items: [
-        { name: "Happy Mini 1,5GB All + 0,5GB Bonus 1 Hari", price: "Rp 8.400", description: "Paket Happy Mini 1,5GB All + 0,5GB Bonus 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 5 GB 1 Hari", price: "Rp 8.500", description: "Paket Happy Mini 5 GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini | 1 GB 1 Hari", price: "Rp 8.500", description: "Paket Happy Mini | 1 GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 10 GB 1 Hari", price: "Rp 8.900", description: "Paket Happy Mini 10 GB 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 3 GB 2 Hari", price: "Rp 10.000", description: "Paket Happy Mini 3 GB 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 6 GB 2 Hari", price: "Rp 10.400", description: "Paket Happy Mini 6 GB 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 5 GB 2 Hari", price: "Rp 10.600", description: "Paket Happy Mini 5 GB 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 1GB All + 0,5GB Bonus 3 Hari", price: "Rp 8.100", description: "Paket Happy 1GB All + 0,5GB Bonus 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 5GB All + 2GB Bonus 3 Hari", price: "Rp 13.600", description: "Paket Happy 5GB All + 2GB Bonus 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 8GB 3 Hari", price: "Rp 13.900", description: "Paket Happy Mini 8GB 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 8GB All + 2GB Bonus 3 Hari", price: "Rp 14.000", description: "Paket Happy 8GB All + 2GB Bonus 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 2GB All + 0,5GB Bonus 5 Hari", price: "Rp 17.300", description: "Paket Happy 2GB All + 0,5GB Bonus 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 10GB 5 Hari", price: "Rp 18.800", description: "Paket Happy Mini 10GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 3,5GB All + 1GB Jabo 5 Hari", price: "Rp 19.100", description: "Paket Happy 3,5GB All + 1GB Jabo 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 8GB 5 Hari", price: "Rp 20.400", description: "Paket Happy Mini 8GB 5 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "Happy Mini | 1 GB 1 Hari", price: "Rp 8.100", description: "Kuota utama 1GB, berlaku 1 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 1,5GB All + 0,5GB Bonus 1 Hari", price: "Rp 7.900", description: "Kuota utama 1,5GB, berlaku 1 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 2 GB 1 Hari", price: "Rp 7.200", description: "Kuota utama 2GB, berlaku 1 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 3 GB 1 Hari", price: "Rp 7.400", description: "Kuota utama 3GB, berlaku 1 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 5 GB 1 Hari", price: "Rp 8.300", description: "Kuota utama 5GB, berlaku 1 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 10 GB 1 Hari", price: "Rp 8.500", description: "Kuota utama 10GB, berlaku 1 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 3 GB 2 Hari", price: "Rp 11.700", description: "Kuota utama 3GB, berlaku 2 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 5 GB 2 Hari", price: "Rp 12.200", description: "Kuota utama 5GB, berlaku 2 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 6 GB 2 Hari", price: "Rp 11.900", description: "Kuota utama 6GB, berlaku 2 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 10GB 2 Hari", price: "Rp 11.600", description: "Kuota utama 10GB, berlaku 2 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 1GB 3 Hari", price: "Rp 7.400", description: "Kuota utama 1GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 5GB 3 Hari", price: "Rp 13.700", description: "Kuota utama 5GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 6GB 3 Hari", price: "Rp 13.600", description: "Kuota utama 6GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 6GB 3 Hari", price: "Rp 14.000", description: "Kuota utama 6GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 11GB 3 Hari", price: "Rp 14.600", description: "Kuota utama 11GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 2GB All + 0,5GB Bonus 5 Hari", price: "Rp 16.600", description: "Kuota utama 2GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 3,5GB All + 1GB Jabo 5 Hari", price: "Rp 15.400", description: "Kuota utama 3,5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 3.5 GB 5 Hari", price: "Rp 17.600", description: "Kuota utama 3.5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 5GB 5 Hari", price: "Rp 15.100", description: "Kuota utama 5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 7GB 5 Hari", price: "Rp 16.700", description: "Kuota utama 7GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 8GB 5 Hari", price: "Rp 19.800", description: "Kuota utama 8GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 10GB 5 Hari", price: "Rp 18.600", description: "Kuota utama 10GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 12GB 5 Hari", price: "Rp 20.600", description: "Kuota utama 12GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
 
-    /* ========================
-       THREE DATA HAPPY MINGGUAN
+        /* ========================
+       TRI HAPPY (7-14 HARI) 🔵
     ======================== */
     {
-      title: "Three Data Happy Mingguan",
+      title: "Tri Happy (7-14 Hari) 🔵",
       items: [
-        { name: "3GB All + 1GB Bonus 7 Hari", price: "Rp 23.500", description: "Paket 3GB All + 1GB Bonus 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 10GB 7 Hari", price: "Rp 24.500", description: "Paket Happy 10GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "8GB All + 3GB Bonus 7 Hari", price: "Rp 25.800", description: "Paket 8GB All + 3GB Bonus 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 15GB 7 Hari", price: "Rp 26.100", description: "Paket Happy 15GB 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "5GB All + 1,5GB Bonus 7 Hari", price: "Rp 27.300", description: "Paket 5GB All + 1,5GB Bonus 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 3GB 14 Hari", price: "Rp 22.900", description: "Paket Happy 3GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 7GB 14 Hari", price: "Rp 23.500", description: "Paket Happy 7GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "1,5GB All + 0,5GB Bonus 7 Hari", price: "Rp 10.000", description: "Kuota utama 1,5GB, berlaku 7 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "3GB All + 1GB Bonus 7 Hari", price: "Rp 23.000", description: "Kuota utama 3GB, berlaku 7 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "5GB All + 1,5GB Bonus 7 Hari", price: "Rp 25.200", description: "Kuota utama 5GB, berlaku 7 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "8GB All + 3GB Bonus 7 Hari", price: "Rp 25.300", description: "Kuota utama 8GB, berlaku 7 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 15GB 7 Hari", price: "Rp 24.500", description: "Kuota utama 15GB, berlaku 7 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 17GB 7 Hari", price: "Rp 29.400", description: "Kuota utama 17GB, berlaku 7 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 9GB 10 Hari", price: "Rp 28.700", description: "Kuota utama 9GB, berlaku 10 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 1GB 14 Hari", price: "Rp 9.800", description: "Kuota utama 1GB, berlaku 14 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 3GB 14 Hari", price: "Rp 22.200", description: "Kuota utama 3GB, berlaku 14 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 8GB 14 Hari", price: "Rp 24.800", description: "Kuota utama 8GB, berlaku 14 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 12GB 14 Hari", price: "Rp 28.200", description: "Kuota utama 12GB, berlaku 14 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
 
-    /* ========================
-       THREE DATA HAPPY BULANAN
+        /* ========================
+       TRI HAPPY BULANAN 🔵
     ======================== */
     {
-      title: "Three Data Happy Bulanan",
+      title: "Tri Happy Bulanan 🔵",
       items: [
-        { name: "Happy 1GB 14 Hari", price: "Rp 10.200", description: "Paket Happy 1GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 3GB 14 Hari", price: "Rp 21.800", description: "Paket Happy 3GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 7GB 14 Hari", price: "Rp 23.400", description: "Paket Happy 7GB 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 5GB 28 Hari", price: "Rp 26.100", description: "Paket Happy 5GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 7GB 28 Hari", price: "Rp 32.700", description: "Paket Happy 7GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 9GB 28 Hari", price: "Rp 36.900", description: "Paket Happy 9GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 11GB 28 Hari", price: "Rp 41.900", description: "Paket Happy 11GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 15GB 28 Hari", price: "Rp 46.500", description: "Paket Happy 15GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 14GB 28 Hari", price: "Rp 47.900", description: "Paket Happy 14GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 18GB 28 Hari", price: "Rp 50.400", description: "Paket Happy 18GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 24GB 28 Hari", price: "Rp 56.500", description: "Paket Happy 24GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 30GB 28 Hari", price: "Rp 63.000", description: "Paket Happy 30GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 42GB 28 Hari", price: "Rp 77.800", description: "Paket Happy 42GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "42GB Nat + 100 Mnt/Hari 28 Hari", price: "Rp 77.900", description: "Paket 42GB Nat + 100 Mnt/Hari 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "30GB + 12GB Jabo 28 Hari", price: "Rp 78.000", description: "Paket 30GB + 12GB Jabo 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "30GB + 12GB Jatim Bali Nusra 28 Hari", price: "Rp 78.100", description: "Paket 30GB + 12GB Jatim Bali Nusra 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "30GB + 12GB Jateng-Jabar 28 Hari", price: "Rp 81.300", description: "Paket 30GB + 12GB Jateng-Jabar 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 45GB 28 Hari", price: "Rp 86.100", description: "Paket Happy 45GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 65GB 28 Hari", price: "Rp 89.100", description: "Paket Happy 65GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 55GB 28 Hari", price: "Rp 91.800", description: "Paket Happy 55GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 100GB 28 Hari", price: "Rp 107.700", description: "Paket Happy 100GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 80GB 28 Hari", price: "Rp 117.000", description: "Paket Happy 80GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 300GB 28 Hari", price: "Rp 155.500", description: "Paket Happy 300GB 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "Happy 5GB 28 Hari", price: "Rp 25.700", description: "Kuota utama 5GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 7GB 28 Hari", price: "Rp 31.200", description: "Kuota utama 7GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 9GB 28 Hari", price: "Rp 37.100", description: "Kuota utama 9GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 11GB 28 Hari", price: "Rp 39.300", description: "Kuota utama 11GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 14GB 28 Hari", price: "Rp 47.200", description: "Kuota utama 14GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 15GB 28 Hari", price: "Rp 47.400", description: "Kuota utama 15GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 18GB 28 Hari", price: "Rp 48.400", description: "Kuota utama 18GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 24GB 28 Hari", price: "Rp 56.300", description: "Kuota utama 24GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 30GB 28 Hari", price: "Rp 74.600", description: "Kuota utama 30GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "30GB + 12GB Jabo 28 Hari", price: "Rp 81.000", description: "Kuota utama 30GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "30GB + 12GB Jatim Bali Nusra 28 Hari", price: "Rp 85.300", description: "Kuota utama 30GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "30GB + 12GB Jateng-Jabar 28 Hari", price: "Rp 86.300", description: "Kuota utama 30GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 32GB 28 Hari", price: "Rp 67.500", description: "Kuota utama 32GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 45GB 28 Hari", price: "Rp 85.500", description: "Kuota utama 45GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 52GB 28 Hari", price: "Rp 84.200", description: "Kuota utama 52GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 55GB 28 Hari", price: "Rp 89.000", description: "Kuota utama 55GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 66GB 28 Hari", price: "Rp 94.400", description: "Kuota utama 66GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 80GB 28 Hari", price: "Rp 117.100", description: "Kuota utama 80GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 100GB 28 Hari", price: "Rp 108.100", description: "Kuota utama 100GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 150GB 28 Hari", price: "Rp 119.200", description: "Kuota utama 150GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 156GB 28 Hari", price: "Rp 116.800", description: "Kuota utama 156GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 300GB 28 Hari", price: "Rp 155.600", description: "Kuota utama 300GB, berlaku 28 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
 
-    /* ========================
-       THREE DATA HAPPY 5G
+
+        /* ========================
+       DATA PURE HARIAN 🔵
     ======================== */
     {
-      title: "Three Data Happy 5G",
+      title: "Data Pure Harian 🔵",
       items: [
-        { name: "Happy 5G | 6GB (4GB + 2GB 5G) 1 Hari", price: "Rp 9.500", description: "Paket Happy 5G | 6GB (4GB + 2GB 5G) 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 70GB (50GB + 20GB 5G) 30 Hari", price: "Rp 106.600", description: "Paket Happy 70GB (50GB + 20GB 5G) 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "THREE DATA PURE 2GB 7HARI", price: "Rp 12.900", description: "Kuota utama 2GB, berlaku 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 1GB 14HARI", price: "Rp 6.900", description: "Kuota utama 1GB, berlaku 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 1.5GB 14HARI", price: "Rp 11.100", description: "Kuota utama 1.5GB, berlaku 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 2GB 14HARI", price: "Rp 18.100", description: "Kuota utama 2GB, berlaku 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 2.5GB 14HARI", price: "Rp 17.900", description: "Kuota utama 2.5GB, berlaku 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 4GB 14HARI", price: "Rp 24.600", description: "Kuota utama 4GB, berlaku 14 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
 
-    /* ========================
-       THREE DATA SPESIAL
+        /* ========================
+       DATA PURE BULANAN 🔵
     ======================== */
     {
-      title: "Three Data Spesial",
+      title: "Data Pure Bulanan 🔵",
       items: [
-        { name: "Three data spesial 30GB (1GB/Hari) 30Hr", price: "Rp 60.500", description: "Paket Three data spesial 30GB (1GB/Hari) 30Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Three data spesial 60GB (2GB/Hari) 30Hr", price: "Rp 99.100", description: "Paket Three data spesial 60GB (2GB/Hari) 30Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Three data spesial 90GB (3GB/Hari) 30Hr", price: "Rp 115.800", description: "Paket Three data spesial 90GB (3GB/Hari) 30Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "THREE DATA PURE 3GB 28HARI", price: "Rp 18.300", description: "Kuota utama 3GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 4GB 28HARI", price: "Rp 24.200", description: "Kuota utama 4GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 5GB 28HARI", price: "Rp 29.600", description: "Kuota utama 5GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 6GB 28HARI", price: "Rp 33.800", description: "Kuota utama 6GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 7GB 28HARI", price: "Rp 35.500", description: "Kuota utama 7GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 8GB 28HARI", price: "Rp 43.700", description: "Kuota utama 8GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 10GB 28HARI", price: "Rp 47.300", description: "Kuota utama 10GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 15GB 28HARI", price: "Rp 49.100", description: "Kuota utama 15GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 20GB 28HARI", price: "Rp 57.600", description: "Kuota utama 20GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Three Data Happy 30GB 28 Hari", price: "Rp 75.400", description: "Kuota utama 30GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 50GB 28HARI", price: "Rp 100.400", description: "Kuota utama 50GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "THREE DATA PURE 100GB 28HARI", price: "Rp 107.900", description: "Kuota utama 100GB, berlaku 28 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "75GB All Jaringan 60 Hari", price: "Rp 142.500", description: "Kuota utama 75GB, berlaku 60 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
 
-    /* ========================
-       THREE DATA PURE HARIAN/MINGGUAN
+        /* ========================
+       ALWAYSON 🟢
     ======================== */
     {
-      title: "Three Data Pure Harian/Mingguan",
+      title: "AlwaysOn 🟢",
       items: [
-        { name: "THREE DATA PURE 1GB 14HARI", price: "Rp 7.400", description: "Paket THREE DATA PURE 1GB 14HARI. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "THREE DATA PURE 2.5GB 14HARI", price: "Rp 18.500", description: "Paket THREE DATA PURE 2.5GB 14HARI. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "THREE DATA PURE 2GB 14HARI", price: "Rp 18.700", description: "Paket THREE DATA PURE 2GB 14HARI. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "THREE DATA PURE 4GB 14HARI", price: "Rp 25.000", description: "Paket THREE DATA PURE 4GB 14HARI. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
-      ]
-    },
-
-    /* ========================
-       THREE ALWAYS ON
-    ======================== */
-    {
-      title: "Three Always ON",
-      items: [
-        { name: "2.5 GB All (Mengikuti Masa Aktif Kartu) + 0.5GB Bonus AON 365Hr", price: "Rp 30.500", description: "Paket 2.5 GB All (Mengikuti Masa Aktif Kartu) + 0.5GB Bonus AON 365Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "3.5 GB All (Mengikuti Masa Aktif Kartu) + Bonus AON 365Hr", price: "Rp 30.500", description: "Paket 3.5 GB All (Mengikuti Masa Aktif Kartu) + Bonus AON 365Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "6 GB All (Mengikuti Masa Aktif Kartu) + 2GB Bonus AON 365Hr", price: "Rp 32.700", description: "Paket 6 GB All (Mengikuti Masa Aktif Kartu) + 2GB Bonus AON 365Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "9 GB All (Mengikuti Masa Aktif Kartu) 365Hr", price: "Rp 48.600", description: "Paket 9 GB All (Mengikuti Masa Aktif Kartu) 365Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "12 GB All (Mengikuti Masa Aktif Kartu) + 4GB Bonus AON 365Hr", price: "Rp 60.000", description: "Paket 12 GB All (Mengikuti Masa Aktif Kartu) + 4GB Bonus AON 365Hr. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "6GB All AON + 20GB (01-17) + Unlimited 30 Hari", price: "Rp 79.400", description: "Paket 6GB All AON + 20GB (01-17) + Unlimited 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "AON 40GB + 12GB Lokal", price: "Rp 111.400", description: "Paket AON 40GB + 12GB Lokal. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
-      ]
-    },
-
-    /* ========================
-       THREE ALL JARINGAN
-    ======================== */
-    {
-      title: "Three All Jaringan",
-      items: [
-        { name: "Three All Jaringan 15GB", price: "Rp 48.700", description: "Paket Three All Jaringan 15GB. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Three All Jaringan 10GB", price: "Rp 48.800", description: "Paket Three All Jaringan 10GB. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Three All Jaringan 20GB", price: "Rp 59.600", description: "Paket Three All Jaringan 20GB. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Three All Jaringan 30GB", price: "Rp 74.300", description: "Paket Three All Jaringan 30GB. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Three All Jaringan 50GB", price: "Rp 94.600", description: "Paket Three All Jaringan 50GB. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "AlwaysOn 2.5GB + Bonus Kuota", price: "Rp 22.800", description: "Kuota 2.5GB reguler mengikuti masa aktif kartu + Bonus kuota untuk wilayah tertentu. Bonus sepenuhnya wewenang pihak tri, bisa kamu cek di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "AlwaysOn 3.5GB + Bonus Kuota", price: "Rp 27.900", description: "Kuota 3.5GB reguler mengikuti masa aktif kartu + Bonus kuota untuk wilayah tertentu. Bonus sepenuhnya wewenang pihak tri, bisa kamu cek di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "AlwaysOn 6GB + Bonus Kuota", price: "Rp 32.200", description: "Kuota 6GB reguler mengikuti masa aktif kartu + Bonus kuota untuk wilayah tertentu. Bonus sepenuhnya wewenang pihak tri, bisa kamu cek di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "AlwaysOn 6GB + 20GB (01-17) + Unli 30 Hari", price: "Rp 80.500", description: "Kuota 6GB reguler mengikuti masa aktif kartu + Bonus kuota untuk wilayah tertentu. Bonus sepenuhnya wewenang pihak tri, bisa kamu cek di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "AlwaysOn 9GB + Bonus Kuota", price: "Rp 48.300", description: "Kuota 9GB reguler mengikuti masa aktif kartu + Bonus kuota untuk wilayah tertentu. Bonus sepenuhnya wewenang pihak tri, bisa kamu cek di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "AlwaysOn 12GB + Bonus Kuota", price: "Rp 59.900", description: "Kuota 12GB reguler mengikuti masa aktif kartu + Bonus kuota untuk wilayah tertentu. Bonus sepenuhnya wewenang pihak tri, bisa kamu cek di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "AlwaysOn 40GB + Bonus Kuota", price: "Rp 111.700", description: "Kuota 40GB reguler mengikuti masa aktif kartu + Bonus kuota untuk wilayah tertentu. Bonus sepenuhnya wewenang pihak tri, bisa kamu cek di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     }
   ]
-};
+}
+
+    
+
+    
