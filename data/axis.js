@@ -55,6 +55,24 @@ window.PRICE_DATA = {
         { name: "AIGO SS Bronet 24Jam 24GB + Kuota di Kota-mu 7hr", price: "Rp 47.700", description: "24GB Nasional + Bonus kuota di wilayah tertentu di Kota-mu. Cek disini ➡️ https://surl.li/ekufhz\nProses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Axis Data 40GB (5G), 14Hari", price: "Rp 55.900", description: "40GB Nasional + Bonus kuota di wilayah tertentu di Kota-mu. Cek disini ➡️ https://surl.li/ekufhz\nProses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
+    },
+
+   /* ========================
+       AXIS WARNET 🔵
+    ======================== */
+    {
+      title: "Axis Warnet 🔵",
+      items: [
+        { name: "Axis Data Paket Warnet 1GB / 1 Jam", price: "Rp 2.200", description: "Paket Warnet 1 Jam 1GB. Hanya bisa di Aktivasi 16X dalam 7 Hari, Akan di Reset Setiap Minggunya. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Paket Warnet UNLIMITED 1Jam", price: "Rp 2.300", description: "Hanya bisa di Aktivasi 3x dalam 7 Hari & 7x Dalam 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Data Paket Warnet 1,5 GB / 2 Jam", price: "Rp 2.500", description: "Paket Warnet 2 Jam 1,5 GB. Hanya bisa di Aktivasi 16X dalam 7 Hari, Akan di Reset Setiap Minggunya. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Data Paket Warnet 3 GB / 3 Jam", price: "Rp 3.500", description: "Paket Warnet 3 Jam 3GB. Hanya bisa di Aktivasi 16X dalam 7 Hari, Akan di Reset Setiap Minggunya. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Paket Warnet UNLIMITED 3Jam", price: "Rp 3.900", description: "Hanya bisa di Aktivasi 3x dalam 7 Hari & 7x Dalam 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Data Paket Warnet 3 GB / 6 Jam", price: "Rp 4.200", description: "Paket Warnet 6 Jam 3GB. Hanya bisa di Aktivasi 16X dalam 7 Hari, Akan di Reset Setiap Minggunya. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Paket Warnet UNLIMITED 24Jam", price: "Rp 9.800", description: "Hanya bisa di Aktivasi 3x dalam 7 Hari & 7x Dalam 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Paket Warnet UNLIMITED 48Jam", price: "Rp 21.500", description: "Hanya bisa di Aktivasi 3x dalam 7 Hari & 7x Dalam 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Axis Paket Warnet UNLIMITED 72Jam", price: "Rp 25.900", description: "Hanya bisa di Aktivasi 3x dalam 7 Hari & 7x Dalam 30 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+      ]
     }
   ]
 }
