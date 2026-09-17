@@ -12,7 +12,7 @@ window.PRICE_DATA = {
   ],
 
   categories: [
-      /* ========================
+    /* ========================
        TRI HAPPY (1-5 HARI) 🔵
     ======================== */
     {
@@ -30,20 +30,19 @@ window.PRICE_DATA = {
         { name: "Happy 10GB 2 Hari", price: "Rp 11.600", description: "Kuota utama 10GB, berlaku 2 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy 1GB 3 Hari", price: "Rp 7.400", description: "Kuota utama 1GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy 5GB 3 Hari", price: "Rp 13.700", description: "Kuota utama 5GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 6GB 3 Hari", price: "Rp 13.600", description: "Kuota utama 6GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy Mini 6GB 3 Hari", price: "Rp 14.000", description: "Kuota utama 6GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy 11GB 3 Hari", price: "Rp 14.600", description: "Kuota utama 11GB, berlaku 3 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy 2GB All + 0,5GB Bonus 5 Hari", price: "Rp 16.600", description: "Kuota utama 2GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy 3,5GB All + 1GB Jabo 5 Hari", price: "Rp 15.400", description: "Kuota utama 3,5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy Mini 3.5 GB 5 Hari", price: "Rp 17.600", description: "Kuota utama 3.5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Happy Mini 5GB 5 Hari", price: "Rp 15.100", description: "Kuota utama 5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy 3,5GB All + 1GB Jabo 5 Hari", price: "Rp 18.300", description: "Kuota utama 3,5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Happy Mini 5GB 5 Hari", price: "Rp 17.900", description: "Kuota utama 5GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy Mini 7GB 5 Hari", price: "Rp 16.700", description: "Kuota utama 7GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy Mini 8GB 5 Hari", price: "Rp 19.800", description: "Kuota utama 8GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy Mini 10GB 5 Hari", price: "Rp 18.600", description: "Kuota utama 10GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Happy 12GB 5 Hari", price: "Rp 20.600", description: "Kuota utama 12GB, berlaku 5 Hari. Bonus kuota tidak semua dapat, cek lengkapnya di kuotalokal.tri.co.id. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
-
+l
         /* ========================
        TRI HAPPY (7-14 HARI) 🔵
     ======================== */
