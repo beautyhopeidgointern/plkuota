@@ -48,12 +48,12 @@ window.PRICE_DATA = {
       title: "Telkomsel Mini (1-2 Hari) 🔵",
       items: [
         { name: "Mini Data 500MB All 1 Hari", price: "Rp 6.400", description: "Kuota utama 500MB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 1GB All 1 Hari", price: "Rp 8.900", description: "Kuota utama 1GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 2GB All 1 Hari", price: "Rp 11.400", description: "Kuota utama 2GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 1GB All 1 Hari", price: "Rp 9.300", description: "Kuota utama 1GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Mini Data 3GB All 1 Hari", price: "Rp 9.400", description: "Kuota utama 3GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 4GB All 1 Hari", price: "Rp 12.300", description: "Kuota utama 4GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data 5GB 1 Hari", price: "Rp 12.000", description: "Kuota utama 5GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 2GB All 1 Hari", price: "Rp 11.400", description: "Kuota utama 2GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "FULL KUOTA 7GB 24JAM 1HARI", price: "Rp 11.900", description: "Kuota utama 7GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data 5GB 1 Hari", price: "Rp 12.000", description: "Kuota utama 5GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 4GB All 1 Hari", price: "Rp 12.300", description: "Kuota utama 4GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "FULL KUOTA 7GB 24JAM 1HARI", price: "Rp 12.600", description: "Kuota utama 7GB, berlaku untuk 1 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Mini Data 5GB All 2 Hari", price: "Rp 20.900", description: "Kuota utama 5GB, berlaku untuk 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Mini Data 8GB All 2 Hari", price: "Rp 28.500", description: "Kuota utama 8GB, berlaku untuk 2 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
@@ -66,16 +66,17 @@ window.PRICE_DATA = {
     {
       title: "Telkomsel Mini (3 Hari) 🔵",
       items: [
-        { name: "Tsel Data Mini 500MB All 3 Hari", price: "Rp 6.300", description: "Kuota utama 500MB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data Mini 1GB All 3 Hari", price: "Rp 10.400", description: "Kuota utama 1GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 500MB All 3 Hari", price: "Rp 6.400", description: "Kuota utama 500MB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 1GB All 3 Hari", price: "Rp 10.300", description: "Kuota utama 1GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 2GB All 3 Hari", price: "Rp 12.700", description: "Kuota utama 2GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 2GB All 3 Hari", price: "Rp 12.700", description: "Kuota utama 2GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 3GB All 3 Hari", price: "Rp 13.800", description: "Kuota utama 3GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 5GB All 3 Hari", price: "Rp 26.200", description: "Kuota utama 5GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 7GB All 3 Hari", price: "Rp 26.900", description: "Kuota utama 7GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data Mini 8GB All 3 Hari", price: "Rp 37.100", description: "Kuota utama 8GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 10GB All 3 Hari", price: "Rp 36.900", description: "Kuota utama 10GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Tsel Data Mini 15GB All 3 Hari", price: "Rp 60.300", description: "Kuota utama 15GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 8GB All 3 Hari", price: "Rp 37.100", description: "Kuota utama 8GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 17GB All 3 Hari", price: "Rp 43.900", description: "Kuota utama 17GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Tsel Data Mini 15GB All 3 Hari", price: "Rp 60.300", description: "Kuota utama 15GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Tsel Data Mini 20GB All 3 Hari", price: "Rp 71.100", description: "Kuota utama 20GB, berlaku untuk 3 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
@@ -101,14 +102,14 @@ window.PRICE_DATA = {
     {
       title: "Telkomsel Mini 7 Hari 🔵",
       items: [
-        { name: "Mini Data 1GB All 7 Hari", price: "Rp 18.100", description: "Kuota utama 1GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 1.5GB All 7 Hari", price: "Rp 16.200", description: "Kuota utama 1.5GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Mini Data 2GB All 7 Hari", price: "Rp 15.800", description: "Kuota utama 2GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 3GB All 7 Hari", price: "Rp 18.300", description: "Kuota utama 3GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 1.5GB All 7 Hari", price: "Rp 16.200", description: "Kuota utama 1.5GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 1GB All 7 Hari", price: "Rp 18.100", description: "Kuota utama 1GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 3GB All 7 Hari", price: "Rp 18.200", description: "Kuota utama 3GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Mini Data 5GB All 7 Hari", price: "Rp 26.500", description: "Kuota utama 5GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 7GB All 7 Hari", price: "Rp 26.400", description: "Kuota utama 7GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
+        { name: "Mini Data 7GB All 7 Hari", price: "Rp 27.100", description: "Kuota utama 7GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
         { name: "Mini Data 10GB All 7 Hari", price: "Rp 36.300", description: "Kuota utama 10GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." },
-        { name: "Mini Data 15GB All 7 Hari", price: "Rp 52.800", description: "Kuota utama 15GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
+        { name: "Mini Data 15GB All 7 Hari", price: "Rp 43.800", description: "Kuota utama 15GB, berlaku untuk 7 Hari. Proses otomatis 1-15 menit. Mohon pastikan nomor tujuan sudah benar." }
       ]
     },
 
