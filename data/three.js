@@ -1,3 +1,16 @@
+window.PRICE_DATA = {
+  title: "Three",
+  subtitle: "Pilih kategori lalu pilih paket yang kamu butuhkan",
+  contact: "6283197962700",
+
+  formFields: [
+    {
+      type: "text",
+      label: "Nomor Tujuan",
+      placeholder: "Masukkan nomor tujuan"
+    }
+  ],
+
   categories: [
     /* ========================
        TRI HAPPY (1-5 HARI) 🔵
