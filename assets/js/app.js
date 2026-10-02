@@ -35,36 +35,39 @@ function loadProviderData(providerKey) {
   });
 }
 
-// === FUNGSI HITUNG HARGA JUAL (Berdasarkan Aturan Baru) ===
+// === FUNGSI HITUNG HARGA JUAL (Dibulatkan ke Ratusan Terdekat ke Atas) ===
 function hitungHargaJual(hargaDasar) {
   let laba = 0;
 
   // Menentukan laba berdasarkan rentang harga dasar
   if (hargaDasar < 10000) {
-    laba = 650;
+    laba = 500;
   } else if (hargaDasar < 25000) {
-    laba = 900;
+    laba = 800;
   } else if (hargaDasar < 40000) {
     laba = 1000;
   } else if (hargaDasar < 50000) {
-    laba = 1300;
+    laba = 1200;
   } else if (hargaDasar < 80000) {
-    laba = 1600;
+    laba = 1700;
   } else if (hargaDasar < 150000) {
     laba = 1800;
   } else if (hargaDasar <= 250000) {
-    laba = 2200;
+    laba = 2500;
   } else {
-    laba = 3000; // Cadangan jika di atas 250rb
+    laba = 3000;
   }
 
   // Fee 0.8% dari harga dasar
-  const feePersen = hargaDasar * (0.75 / 100);
+  const feePersen = hargaDasar * (0.8 / 100);
 
-  // Total harga akhir dibulatkan ke atas
-  const hargaJual = Math.ceil(hargaDasar + feePersen + laba);
+  // Total harga kotor
+  const hargaKotor = hargaDasar + feePersen + laba;
 
-  // Format ke Rupiah (Contoh: Rp 10.500)
+  // Dibulatkan ke ratusan terdekat ke atas (Contoh: 10.283 jadi 10.300)
+  const hargaJual = Math.ceil(hargaKotor / 100) * 100;
+
+  // Format ke Rupiah
   return "Rp " + hargaJual.toLocaleString("id-ID");
 }
 
