@@ -35,6 +35,47 @@ function loadProviderData(providerKey) {
   });
 }
 
+// === FUNGSI HITUNG HARGA JUAL (Berdasarkan Aturan Baru) ===
+function hitungHargaJual(hargaDasar) {
+  let laba = 0;
+
+  // Menentukan laba berdasarkan rentang harga dasar
+  if (hargaDasar < 10000) {
+    laba = 650;
+  } else if (hargaDasar < 25000) {
+    laba = 900;
+  } else if (hargaDasar < 40000) {
+    laba = 1000;
+  } else if (hargaDasar < 50000) {
+    laba = 1300;
+  } else if (hargaDasar < 80000) {
+    laba = 1600;
+  } else if (hargaDasar < 150000) {
+    laba = 1800;
+  } else if (hargaDasar <= 250000) {
+    laba = 2200;
+  } else {
+    laba = 3000; // Cadangan jika di atas 250rb
+  }
+
+  // Fee 0.8% dari harga dasar
+  const feePersen = hargaDasar * (0.75 / 100);
+
+  // Total harga akhir dibulatkan ke atas
+  const hargaJual = Math.ceil(hargaDasar + feePersen + laba);
+
+  // Format ke Rupiah (Contoh: Rp 10.500)
+  return "Rp " + hargaJual.toLocaleString("id-ID");
+}
+
+// Fungsi bantu untuk ekstrak angka dari string harga mentah (misal "10000" atau "Rp 10.000")
+function parseHargaMentah(strHarga) {
+  if (typeof strHarga === "number") return strHarga;
+  if (!strHarga) return 0;
+  const angka = parseInt(String(strHarga).replace(/[^0-9]/g, ""), 10);
+  return isNaN(angka) ? 0 : angka;
+}
+
 const titleEl = document.getElementById("game-title");
 const subtitleEl = document.getElementById("game-subtitle");
 const categoryTabsEl = document.getElementById("category-tabs");
@@ -150,15 +191,19 @@ function createPriceCard(item) {
   const title = document.createElement("h3");
   title.textContent = item.name;
 
+  // Ubah harga asli dari supplier menggunakan rumus laba bertingkat
+  const rawPrice = parseHargaMentah(item.price);
+  const finalPriceFormatted = hitungHargaJual(rawPrice);
+
   const price = document.createElement("p");
   price.className = "price";
-  price.textContent = item.price;
+  price.textContent = finalPriceFormatted;
 
   const selectItem = () => {
     updateProviderCategoryField();
 
     if (selectedProductEl) selectedProductEl.value = item.name;
-    if (selectedPriceEl) selectedPriceEl.value = item.price;
+    if (selectedPriceEl) selectedPriceEl.value = finalPriceFormatted; // Menggunakan harga setelah markup
     if (descriptionEl) descriptionEl.value = item.description || "-";
 
     document.querySelectorAll(".price-item").forEach((el) => {
@@ -346,7 +391,7 @@ async function initProductPage() {
 
 initProductPage();
 
-// === FUNGSI BARU UNTUK TOMBOL SALIN FORM (VERSI KUAT UNTUK MOBILE/IFRAME) ===
+// === FUNGSI SALIN FORM ===
 
 function salinPreview() {
   const elemenPreview = document.getElementById("preview-order");
@@ -357,67 +402,54 @@ function salinPreview() {
     return;
   }
 
-  // Coba gunakan Clipboard API versi modern jika diizinkan (Solusi 2)
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(teksYangDisalin)
       .then(() => efekBerhasilSalin())
       .catch(err => {
         console.warn("Clipboard API diblokir Iframe, mencoba fallback...", err);
-        jalankanFallbackCopy(elemenPreview); // Jika gagal, lari ke fallback
+        jalankanFallbackCopy(elemenPreview);
       });
   } else {
-    // Jika dari awal browser tidak dukung, langsung fallback (Solusi 1)
     jalankanFallbackCopy(elemenPreview);
   }
 }
 
-// Fungsi cadangan paksa salin untuk Iframe / iOS / Android WebView
 function jalankanFallbackCopy(textarea) {
-  // Simpan status awal
   const isReadOnly = textarea.readOnly;
-  
-  // Trik untuk iOS: Hapus readonly sementara agar teks bisa di-select sepenuhnya
   textarea.readOnly = false;
-  
-  // Select teks
   textarea.select();
-  textarea.setSelectionRange(0, 99999); // Khusus untuk mobile/iOS
+  textarea.setSelectionRange(0, 99999);
 
   try {
-    // Eksekusi perintah salin bawaan jadul
     const berhasil = document.execCommand('copy');
-    
     if (berhasil) {
       efekBerhasilSalin();
     } else {
-      alert("Gagal menyalin secara otomatis. Sistem menolak. Silakan blok teks dan salin manual.");
+      alert("Gagal menyalin secara otomatis. Silakan salin manual.");
     }
   } catch (err) {
     console.error("Fallback gagal:", err);
-    alert("HP kamu memblokir fitur salin dari aplikasi ini. Silakan salin manual.");
+    alert("HP kamu memblokir fitur salin. Silakan salin manual.");
   }
 
-  // Kembalikan status readonly agar tidak bisa diedit user
   textarea.readOnly = isReadOnly;
-  
-  // Hilangkan blok biru/seleksi teks biar tampilan rapi lagi
   if (window.getSelection) {
     window.getSelection().removeAllRanges();
   }
 }
 
-// Fungsi untuk animasi tombol berubah jadi "Tersalin!"
 function efekBerhasilSalin() {
   const btnCopy = document.getElementById("copy-btn");
+  if (!btnCopy) return;
   const teksAsli = btnCopy.innerText;
   
   btnCopy.innerText = "✓ Tersalin!";
-  btnCopy.style.backgroundColor = "#dcfce3"; // Beri warna hijau sedikit
+  btnCopy.style.backgroundColor = "#dcfce3";
   btnCopy.style.color = "#166534";
   
   setTimeout(() => {
     btnCopy.innerText = teksAsli;
-    btnCopy.style.backgroundColor = "#f1f5f9"; // Kembalikan warna awal
+    btnCopy.style.backgroundColor = "#f1f5f9";
     btnCopy.style.color = "#0f172a";
   }, 2000);
 }
