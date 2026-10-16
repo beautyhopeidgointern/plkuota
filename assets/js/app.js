@@ -1,6 +1,7 @@
 function getProviderKey() {
   const params = new URLSearchParams(window.location.search);
-  return params.get("provider") || "";
+  const provider = params.get("provider") || "";
+  return provider.toLowerCase().trim();
 }
 
 function loadProviderData(providerKey) {
