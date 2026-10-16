@@ -1,4 +1,4 @@
-Window.PRICE_DATA = {
+window.PRICE_DATA = {
   title: "Three",
   subtitle: "Pilih kategori lalu pilih paket yang kamu butuhkan",
   contact: "6283197962700",
